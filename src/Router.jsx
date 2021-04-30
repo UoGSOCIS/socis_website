@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import {
-  AboutPage, ClubPage, ContactPage, HomePage, NotFound, PolicyPage,
+  AboutPage, ClubPage, ContactPage, HomePage, NotFoundPage, PolicyPage,
 } from './pages';
 
 function Router() {
@@ -13,7 +13,7 @@ function Router() {
         <Route exact path="/policy" component={PolicyPage} />
         <Route exact path="/about" component={AboutPage} />
         <Route exact path="/contact" component={ContactPage} />
-        <Route path="*" component={NotFound} />
+        <Route path="*" component={NotFoundPage} />
       </Switch>
     </BrowserRouter>
   );

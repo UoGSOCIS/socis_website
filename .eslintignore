@@ -1,4 +1,4 @@
 node_modules
 build
 public
-src/App.test.js
+src/tests

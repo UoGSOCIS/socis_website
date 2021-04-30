@@ -1,11 +1,11 @@
 import React from 'react';
-import NavBar from '../../components/navbar';
+import NavBar from '../../components';
 import HomeHeader from './HomeHeader';
 
 function HomePage() {
   return (
     <div style={styles.main}>
-      <NavBar style={{ postion: 'absolute' }} />
+      <NavBar style={{ position: 'absolute' }} />
       <HomeHeader />
     </div>
   );
