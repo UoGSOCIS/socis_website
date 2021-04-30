@@ -4,10 +4,17 @@ import Router from "./Router";
 
 function App() {
     return (
-        <div className={'app'}>
+        <div className={'App'} style={styles.all}>
             <Router />
         </div>
     );
 }
+
+const styles = {
+    all: {
+        position: 'relative',
+        minHeight: '100vh',
+    }
+};
 
 export default App;
