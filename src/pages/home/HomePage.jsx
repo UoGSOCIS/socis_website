@@ -13,6 +13,7 @@ function HomePage() {
 
 const styles = {
   main: {
+    paddingBottom: '4.5rem',
     backgroundColor: '#660000',
     height: '100vh',
   },

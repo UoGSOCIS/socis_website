@@ -11,7 +11,7 @@ function Footer() {
 const styles = {
   footer: {
     background: '#465052',
-    position: 'relative',
+    position: 'absolute',
     paddingTop: '1.0rem',
     paddingBottom: '1.0rem',
     bottom: '0',
@@ -20,6 +20,7 @@ const styles = {
     width: '100%',
     textAlign: 'center',
     display: 'block',
+    height: '2.5rem',
   },
   footerText: {
     color: 'white',

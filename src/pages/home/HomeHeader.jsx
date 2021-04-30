@@ -3,7 +3,7 @@ import Box from '@material-ui/core/Box';
 
 function HomeHeader() {
   return (
-    <div className="homeHeading">
+    <div className="homeHeading" style={styles.heading}>
       <Box
         display="flex"
         width="100%"
@@ -45,6 +45,9 @@ const useViewport = () => {
 };
 
 const styles = {
+  heading: {
+    height: '100%',
+  },
   message: {
     color: 'white',
     marginTop: 0,

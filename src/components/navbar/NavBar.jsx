@@ -10,7 +10,7 @@ function NavBar() {
       <AppBar position="static" style={{ backgroundColor: '#660000' }}>
         <Toolbar>
           <Typography variant="h6">
-            SOCIS
+            <a href="/" style={styles.homeLink}>SOCIS</a>
           </Typography>
           <div className={styles.links}>
             <Button color="inherit" href="/clubs">Clubs</Button>
@@ -28,6 +28,10 @@ const styles = {
   links: {
     marginLeft: 'auto',
     marginRight: -12,
+  },
+  homeLink: {
+    color: 'white',
+    textDecoration: 'none',
   },
 };
 
