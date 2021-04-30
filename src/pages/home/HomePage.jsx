@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from '../../components';
+import { NavBar } from '../../components';
 import HomeHeader from './HomeHeader';
 
 function HomePage() {

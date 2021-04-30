@@ -1,10 +1,12 @@
 import React from 'react';
 import Router from './Router';
+import { Footer } from './components';
 
 function App() {
   return (
     <div className="App" style={styles.all}>
       <Router />
+      <Footer />
     </div>
   );
 }
