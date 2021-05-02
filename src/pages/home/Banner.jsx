@@ -4,11 +4,11 @@ import HeaderMessage from './BannerMessage';
 
 function Banner() {
   return (
-    <div className="homeHeading" style={styles.heading}>
+    <div className="homeHeading" style={styles.banner}>
       <Box
         display="flex"
         width="100%"
-        height="75%"
+        height="85%"
       >
         <Box m="auto">
           <HeaderMessage />
@@ -19,7 +19,8 @@ function Banner() {
 }
 
 const styles = {
-  heading: {
+  banner: {
+    backgroundColor: '#660000',
     height: '100%',
   },
 };

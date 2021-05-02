@@ -1,26 +1,40 @@
 import React from 'react';
 import { NavBar } from '../../components';
 import Banner from './Banner';
+import Subheader from './Subheader';
+import Subheader2 from './Subheader2';
+import Subheader3 from './Subheader3';
 
 function HomePage() {
   return (
     <div style={styles.main}>
-      <NavBar style={{ position: 'absolute' }} />
-      <Banner />
+      <div style={styles.banner}>
+        <NavBar style={{ position: 'absolute' }} />
+        <Banner />
+      </div>
+      <div style={styles.subheaders}>
+        <Subheader />
+        <Subheader2 />
+        <Subheader3 />
+      </div>
     </div>
   );
 }
 
 const styles = {
   main: {
-    paddingBottom: '4.5rem',
-    backgroundColor: '#660000',
+    paddingBottom: '3.0rem',
+  },
+  banner: {
     height: '100vh',
   },
-  mainMessage: {
-    color: 'white',
-    margin: 0,
-    fontSize: '54px',
+  subheaders: {
+    backgroundColor: '#F5F5F5',
+    textAlign: 'center',
+    paddingTop: '10vh',
+    paddingBottom: '10vh',
+    paddingLeft: '10vw',
+    paddingRight: '10vw',
   },
 };
 
