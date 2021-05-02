@@ -14,9 +14,8 @@ Checklist:
 
 <!-- To check an item, fill the brackets with the letter x; the result should look like `[x]`.  Feel free to leave unchecked items that are not applicable or that you could not perform. -->
 
-- [ ] Add automated tests cases
-- [ ] Verify that all automated tests pass
-- [ ] Run `yarn lint` and ensure linter is still passing
-- [ ] Verify that the changes work as expected on Chrome, Firefox, and Safari
-- [ ] Verify that the changes work as expected on mobile view
+- [ ] Run `yarn test` and verify tests pass
+- [ ] Run `yarn lint` and ensure linter passes
+- [ ] Verify the changes work as expected on at least two browsers
+- [ ] Verify the changes work as expected on mobile view
 - [ ] Update the README and other applicable documentation pages
