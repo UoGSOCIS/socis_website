@@ -1,12 +1,12 @@
 import React from 'react';
 import { NavBar } from '../../components';
-import HomeHeader from './HomeHeader';
+import Banner from './Banner';
 
 function HomePage() {
   return (
     <div style={styles.main}>
       <NavBar style={{ position: 'absolute' }} />
-      <HomeHeader />
+      <Banner />
     </div>
   );
 }
