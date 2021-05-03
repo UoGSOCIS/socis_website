@@ -1,7 +1,7 @@
 import React from 'react';
 import { useViewport } from '../../components';
 
-function BannerMessage() {
+function HeaderMessage() {
   const { width } = useViewport();
   const breakpoint = 500;
 
@@ -26,4 +26,4 @@ const styles = {
   },
 };
 
-export default BannerMessage;
+export default HeaderMessage;

@@ -1,8 +1,8 @@
 import React from 'react';
 import Box from '@material-ui/core/Box';
-import HeaderMessage from './BannerMessage';
+import HeaderMessage from './HeaderMessage';
 
-function Banner() {
+function Header() {
   return (
     <div className="homeHeading" style={styles.banner}>
       <Box
@@ -25,4 +25,4 @@ const styles = {
   },
 };
 
-export default Banner;
+export default Header;

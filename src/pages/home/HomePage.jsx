@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavBar } from '../../components';
-import Banner from './Banner';
+import Header from './Header';
 import Subheader from './Subheader';
 import Subheader2 from './Subheader2';
 import Subheader3 from './Subheader3';
@@ -10,7 +10,7 @@ function HomePage() {
     <div style={styles.main}>
       <div style={styles.banner}>
         <NavBar style={{ position: 'absolute' }} />
-        <Banner />
+        <Header />
       </div>
       <div style={styles.subheaders}>
         <Subheader />
