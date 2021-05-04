@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import {
   AboutPage, ClubPage, ContactPage, HomePage, NotFoundPage, PolicyPage,
-} from './pages';
+} from '../pages';
 
 function Router() {
   return (
