@@ -8,4 +8,4 @@ test('renders socis', () => {
   expect(linkElement).toBeInTheDocument();
 });
 
-// ben is great at programming stuff
+// Ben is great at programming stuff
