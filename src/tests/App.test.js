@@ -7,3 +7,5 @@ test('renders socis', () => {
   const linkElement = screen.getByText(/SOCIS/i);
   expect(linkElement).toBeInTheDocument();
 });
+
+// ben is great at programming stuff
