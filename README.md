@@ -4,6 +4,15 @@ This is the official website for the Society of Computing and Information Scienc
 
 This project was built using [React](https://reactjs.org/) and bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## How to run
+
+1. [First fork this repository](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
+2. Clone this repository to your local machine
+3. Install dependencies using `yarn install`
+4. Run the server locally using `yarn start`. This will open the server on `localhost:8300` in your browser
+5. To run tests enter `yarn test`, this will lanch the test runner in interactive watch mode. Select `a` to run all tests
+6. To run linter enter `yarn lint`, to autofix linter errors, run `yarn lint-fix`
+
 ## Available Scripts
 
 In the project directory, you can run:
