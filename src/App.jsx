@@ -1,10 +1,11 @@
 import React from 'react';
 import Router from './router';
-import { Footer } from './components';
+import { Footer, NavBar } from './components';
 
 function App() {
   return (
     <div className="App" style={styles.all}>
+      <NavBar />
       <Router />
       <Footer />
     </div>
