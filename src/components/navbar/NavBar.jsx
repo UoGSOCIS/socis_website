@@ -1,9 +1,16 @@
 import React from 'react';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import AppBar from '@material-ui/core/AppBar';
+import {
+  Toolbar, Typography, Button, AppBar, Hidden,
+} from '@material-ui/core';
+// import MenuIcon from '@material-ui/icons/Menu';
 import styled from 'styled-components';
+
+const navLinks = [
+  { title: 'Clubs', path: '/clubs' },
+  { title: 'Policy', path: '/policy' },
+  { title: 'About', path: '/about-us' },
+  { title: 'Contact', path: '/contact' },
+];
 
 function NavBar() {
   return (
@@ -13,12 +20,13 @@ function NavBar() {
           <Typography variant="h6">
             <a href="/" style={styles.homeLink}>SOCIS</a>
           </Typography>
-          <Links>
-            <Button className={styles.links} color="inherit" href="/clubs">Clubs</Button>
-            <Button className={styles.links} color="inherit" href="/policy">Policy</Button>
-            <Button className={styles.links} color="inherit" href="/about">About</Button>
-            <Button className={styles.links} color="inherit" href="/contact">Contact</Button>
-          </Links>
+          <Hidden smDown>
+            <Links>
+              {navLinks.map(({ title, path }) => (
+                <Button className={styles.links} color="inherit" href={path}>{title}</Button>
+              ))}
+            </Links>
+          </Hidden>
         </Toolbar>
       </AppBar>
     </div>
