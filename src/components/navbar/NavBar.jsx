@@ -4,11 +4,12 @@ import {
 } from '@material-ui/core';
 // import MenuIcon from '@material-ui/icons/Menu';
 import styled from 'styled-components';
+import NavDrawer from './navdrawer';
 
 const navLinks = [
   { title: 'Clubs', path: '/clubs' },
   { title: 'Policy', path: '/policy' },
-  { title: 'About', path: '/about-us' },
+  { title: 'About', path: '/about' },
   { title: 'Contact', path: '/contact' },
 ];
 
@@ -26,6 +27,9 @@ function NavBar() {
                 <Button className={styles.links} color="inherit" href={path}>{title}</Button>
               ))}
             </Links>
+          </Hidden>
+          <Hidden smUp>
+            <NavDrawer navLinks={navLinks} />
           </Hidden>
         </Toolbar>
       </AppBar>
