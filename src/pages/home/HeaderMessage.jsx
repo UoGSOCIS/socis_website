@@ -23,6 +23,8 @@ const styles = {
     fontSize: '54px',
     marginLeft: '0.5vw',
     marginRight: '0.1vw',
+    paddingLeft: '30px',
+    paddingRight: '30px',
   },
 };
 
