@@ -1,7 +1,6 @@
 import React from 'react';
 import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
-import Container from '@material-ui/core/Container';
 import HeaderMessage from './HeaderMessage';
 
 function Header() {
@@ -14,10 +13,10 @@ function Header() {
       >
         <Box m="auto">
           <Grid container>
-            <Grid item md={4}>
-              <Container>
-                <img src="socisWhite.png" alt="Socis logo" style={{ marginLeft: '20%' }} />
-              </Container>
+            <Grid item md={4} style={{ marginLeft: 'auto', marginRight: 'auto' }}>
+              <div style={{ textAlign: 'center' }}>
+                <img src="socisWhite.png" alt="Socis logo" />
+              </div>
             </Grid>
             <Grid item md={8}>
               <HeaderMessage />
