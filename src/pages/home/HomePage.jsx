@@ -30,7 +30,6 @@ const styles = {
   },
   subheaders: {
     backgroundColor: '#F5F5F5',
-    textAlign: 'center',
     paddingTop: '10vh',
     paddingBottom: '10vh',
     paddingLeft: '10vw',

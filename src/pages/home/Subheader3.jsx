@@ -3,9 +3,12 @@ import { LearnMoreBtn } from '../../components';
 
 function Subheader3() {
   return (
-    <div className="subheader3">
-      <h1>Subheading 3</h1>
-      <p>Subheading text</p>
+    <div className="subheader3" style={{ textAlign: 'center' }}>
+      <h1>Contact Us</h1>
+      <p>
+        Labore ipsum et sunt deserunt consectetur qui voluptate voluptate in
+        incididunt sint ipsum occaecat.
+      </p>
       <LearnMoreBtn href="/contact" />
     </div>
   );
