@@ -11,7 +11,7 @@ import makersSpacePolicy from '../../assets/MakersSpacePolicy.pdf';
 
 function PolicyPage() {
   return (
-    <div className="policy">
+    <>
       <NavBar />
       <Container>
         <Header />
@@ -24,7 +24,7 @@ function PolicyPage() {
         <h2>Makerspace Policy</h2>
         <FileViewer file={makersSpacePolicy} />
       </Container>
-    </div>
+    </>
   );
 }
 
