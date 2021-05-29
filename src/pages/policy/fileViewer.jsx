@@ -19,7 +19,7 @@ function FileViewer({ file }) {
 
 const styles = {
   container: {
-    height: '100vh',
+    height: '90vh',
     paddingBottom: '10vh',
   },
   object: {
