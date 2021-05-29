@@ -1,10 +1,9 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
 
 // eslint-disable-next-line react/prop-types
 function FileViewer({ file }) {
   return (
-    <Container style={styles.container}>
+    <div style={styles.container}>
       <object data={file} type="application/pdf" style={styles.object}>
         <p>
           It appears you do not have a PDF plugin for this browser. No biggie... you can
@@ -14,7 +13,7 @@ function FileViewer({ file }) {
           </a>
         </p>
       </object>
-    </Container>
+    </div>
   );
 }
 

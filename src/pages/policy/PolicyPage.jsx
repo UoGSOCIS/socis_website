@@ -1,5 +1,7 @@
 import React from 'react';
+import Container from '@material-ui/core/Container';
 import { NavBar } from '../../components';
+import Header from './header';
 import FileViewer from './fileViewer';
 
 import constitution from '../../assets/Constitution.pdf';
@@ -11,19 +13,22 @@ function PolicyPage() {
   return (
     <div className="policy">
       <NavBar />
-      <h1>Policy Page</h1>
 
-      <h2>Constitution</h2>
-      <FileViewer file={constitution} />
+      <Container>
+        <Header />
 
-      <h2>Club Space Policy</h2>
-      <FileViewer file={clubSpacePolicy} />
+        <h2>Constitution</h2>
+        <FileViewer file={constitution} />
 
-      <h2>Committee and Staff Policy</h2>
-      <FileViewer file={committeeAndStaffPolicy} />
+        <h2>Club Space Policy</h2>
+        <FileViewer file={clubSpacePolicy} />
 
-      <h2>Makerspace Policy</h2>
-      <FileViewer file={makersSpacePolicy} />
+        <h2>Committee and Staff Policy</h2>
+        <FileViewer file={committeeAndStaffPolicy} />
+
+        <h2>Makerspace Policy</h2>
+        <FileViewer file={makersSpacePolicy} />
+      </Container>
     </div>
   );
 }
