@@ -1,3 +1,7 @@
 import LearnMoreBtn from './LearnMoreBtn';
+import ReturnHomeBtn from './returnHomeBtn';
 
-export default LearnMoreBtn;
+export {
+  LearnMoreBtn,
+  ReturnHomeBtn,
+};

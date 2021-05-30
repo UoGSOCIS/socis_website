@@ -1,7 +1,6 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
-import { NavBar } from '../../components';
+import { NavBar, ReturnHomeBtn } from '../../components';
 
 function NotFoundPage() {
   return (
@@ -17,7 +16,7 @@ function NotFoundPage() {
       >
         <h1 style={styles.header}>404 not found</h1>
         <p>Looks like you took a wrong turn :(</p>
-        <Button href="/">Return Home</Button>
+        <ReturnHomeBtn />
       </Grid>
     </>
   );
@@ -25,7 +24,7 @@ function NotFoundPage() {
 
 const styles = {
   grid: {
-    height: '80vh',
+    height: '70vh',
   },
   header: {
     marginBottom: '0',
