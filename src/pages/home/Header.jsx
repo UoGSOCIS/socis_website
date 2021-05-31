@@ -15,7 +15,7 @@ function Header() {
           <Grid container>
             <Grid item md={4} style={{ marginLeft: 'auto', marginRight: 'auto' }}>
               <div style={{ textAlign: 'center' }}>
-                <img src="socisWhite.png" alt="Socis logo" />
+                <img src="socisWhite.png" alt="Socis logo" className="animate__animated animate__fadeIn" />
               </div>
             </Grid>
             <Grid item md={8}>

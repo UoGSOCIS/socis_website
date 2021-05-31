@@ -6,7 +6,9 @@ function HeaderMessage() {
   const breakpoint = 500;
 
   return (
-    <h1 style={
+    <h1
+      className="animate__animated animate__fadeInRight"
+      style={
       width > 960
         ? styles.message
         : styles.messageMobile
