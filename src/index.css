@@ -11,3 +11,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.animate__animated.animate__fadeIn {
+  --animate-duration: 3s;
+}
