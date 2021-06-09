@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavBar } from '../../components';
-import Header from './Header';
-import Subheader from './Subheader';
-import Subheader2 from './Subheader2';
-import Subheader3 from './Subheader3';
+import Header from './header';
+import Subheader from './subheader';
+import Subheader2 from './subheader2';
+import Subheader3 from './subheader3';
 
 function HomePage() {
   return (
