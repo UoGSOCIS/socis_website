@@ -1,9 +1,9 @@
 import React from 'react';
 import { NavBar } from '../../components';
 import Header from './header';
-import Subheader from './subheader';
-import Subheader2 from './subheader2';
-import Subheader3 from './subheader3';
+import Subheader from './whoAreWe';
+import Subheader2 from './whatDoWeDo';
+import Subheader3 from './contactUs';
 
 function HomePage() {
   return (
@@ -34,6 +34,7 @@ const styles = {
     paddingBottom: '10vh',
     paddingLeft: '10vw',
     paddingRight: '10vw',
+    fontSize: '20px',
   },
 };
 

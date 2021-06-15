@@ -38,8 +38,8 @@ function Subheader2() {
 
 const styles = {
   subheader: {
-    paddingTop: '5vh',
-    paddingBottom: '5vh',
+    paddingTop: '8vh',
+    paddingBottom: '8vh',
     textAlign: 'right',
   },
   subheaderMobile: {
