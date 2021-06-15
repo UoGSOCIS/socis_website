@@ -16,7 +16,7 @@ function Subheader() {
     }
     >
       <Grid container spacing={5}>
-        <Grid item md={9}>
+        <Grid item md={9} sm={12}>
           <h1>Who are we?</h1>
           <p>
             Est sint aliquip fugiat non id excepteur esse ad ad enim ad cupidatat
@@ -25,7 +25,7 @@ function Subheader() {
             ex aliquip ea minim sunt. Nulla sit ut tempor magna.
           </p>
         </Grid>
-        <Grid item md={3}>
+        <Grid item md={3} sm={12}>
           <img src="placeholder.png" alt="placeholder" style={{ maxWidth: '100%' }} />
         </Grid>
       </Grid>

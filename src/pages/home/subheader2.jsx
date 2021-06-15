@@ -17,10 +17,10 @@ function Subheader2() {
     >
       <h1>What do we do?</h1>
       <Grid container spacing={5}>
-        <Grid item md={3}>
+        <Grid item md={3} sm={12}>
           <img src="placeholder.png" alt="placeholder" style={{ maxWidth: '100%' }} />
         </Grid>
-        <Grid item md={9}>
+        <Grid item md={9} sm={12}>
           <p>
             Sint sunt anim magna non labore incididunt mollit in fugiat dolore et.
             Commodo anim minim occaecat adipisicing mollit.
