@@ -5,6 +5,9 @@ function Header() {
     <div className="AboutHeader" style={styles.header}>
       <h1>We are the Society of Computing and Information Sciences</h1>
       <p>
+        Hello world
+      </p>
+      <p>
         Computer Science students have a voice inside the department and that voice is SOCIS. At least one of our
         executives is at every department meeting to give student input on the topics discussed. This has far
         reaching effects on important topics like the future curriculum provided to CS and S. ENG majors.
