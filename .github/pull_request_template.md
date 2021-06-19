@@ -22,3 +22,5 @@ Related: # <!-- number of issue/pull request, or link to external discussion -->
 - [ ] Verify the changes work as expected on at least two browsers
 - [ ] Verify the changes work as expected on mobile view
 - [ ] Update documentation / not applicable
+- [ ] Set yourself as the `Assignee`
+- [ ] Set `SoorajModi` and `BenPearo` as the reviewers
