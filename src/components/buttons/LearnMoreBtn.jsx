@@ -4,9 +4,7 @@ import PropTypes from 'prop-types';
 
 function LearnMoreBtn({ href }) {
   return (
-    <div className="LearnMoreBtn">
-      <Button variant="contained" color="primary" href={href}>Learn More</Button>
-    </div>
+    <Button className="LearnMoreBtn" variant="contained" color="primary" style={style} href={href}>Learn More</Button>
   );
 }
 
@@ -16,6 +14,12 @@ LearnMoreBtn.propTypes = {
 
 LearnMoreBtn.defaultProps = {
   href: '/',
+};
+
+const style = {
+  backgroundColor: 'rgb(102, 0, 0)',
+  padding: '10px 20px 10px 20px',
+  fontSize: '14px',
 };
 
 export default LearnMoreBtn;
