@@ -4,6 +4,7 @@ import {
 } from '@material-ui/core';
 import { Menu } from '@material-ui/icons';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 function NavDrawer({ navLinks }) {
   const [open, setOpen] = useState(false);
@@ -16,15 +17,15 @@ function NavDrawer({ navLinks }) {
   };
 
   const navDrawerList = () => (
-    <List component="nav">
+    <StyledList component="nav">
       {navLinks.map(({ title, path }) => (
-        <a href={path}>
+        <StyledLink href={path}>
           <ListItem button>
             <ListItemText primary={title} />
           </ListItem>
-        </a>
+        </StyledLink>
       ))}
-    </List>
+    </StyledList>
   );
 
   return (
@@ -48,6 +49,16 @@ function NavDrawer({ navLinks }) {
     </>
   );
 }
+
+const StyledList = styled(List)`
+  background-color: #660000;
+  height: 100%
+`;
+
+const StyledLink = styled.a`
+  text-decoration: none;
+  color: white;
+`;
 
 NavDrawer.propTypes = {
   navLinks: PropTypes.arrayOf(PropTypes.shape({
