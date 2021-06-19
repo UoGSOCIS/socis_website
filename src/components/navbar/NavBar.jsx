@@ -15,31 +15,29 @@ const navLinks = [
 
 function NavBar() {
   return (
-    <div className="navbar">
-      <AppBar position="static" style={{ backgroundColor: '#660000' }}>
-        <Toolbar>
+    <AppBar position="static" style={{ backgroundColor: '#660000' }}>
+      <Toolbar>
+        <Hidden smDown>
           <Typography variant="h6">
             <a href="/" style={styles.homeLink}>SOCIS</a>
           </Typography>
-          <Hidden smDown>
-            <Links>
-              {navLinks.map(({ title, path }) => (
-                <Button className={styles.links} color="inherit" href={path}>{title}</Button>
-              ))}
-            </Links>
-          </Hidden>
-          <Hidden smUp>
-            <NavDrawer navLinks={navLinks} />
-          </Hidden>
-        </Toolbar>
-      </AppBar>
-    </div>
+          <Links>
+            {navLinks.map(({ title, path }) => (
+              <Button color="inherit" href={path}>{title}</Button>
+            ))}
+          </Links>
+        </Hidden>
+        <Hidden mdUp>
+          <NavDrawer navLinks={navLinks} />
+        </Hidden>
+      </Toolbar>
+    </AppBar>
   );
 }
 
 const Links = styled.div`
-  marginLeft: 'auto';
-  marginRight: -12;
+  margin-left: 'auto';
+  margin-right: -12;
 `;
 
 const styles = {

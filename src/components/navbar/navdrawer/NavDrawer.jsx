@@ -30,8 +30,9 @@ function NavDrawer({ navLinks }) {
   return (
     <>
       <IconButton
-        edge="start"
         aria-label="menu"
+        edge="end"
+        color="inherit"
         onClick={toggleDrawer(true)}
       >
         <Menu color="inherit" />
