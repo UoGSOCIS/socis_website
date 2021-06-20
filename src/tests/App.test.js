@@ -4,7 +4,7 @@ import App from '../App';
 
 test('renders socis', () => {
   render(<App />);
-  const linkElement = screen.getByText(/SOCIS/i);
+  const linkElement = screen.getByAltText(/SOCIS Logo/i);
   expect(linkElement).toBeInTheDocument();
 });
 

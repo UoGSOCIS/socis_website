@@ -23,7 +23,7 @@ function NavBar() {
         <WebView smDown>
           <Links>
             {navLinks.map(({ title, path }) => (
-              <Button color="inherit" href={path} style={styles.pageLink}>{title}</Button>
+              <Button key={title} color="inherit" href={path} style={styles.pageLink}>{title}</Button>
             ))}
           </Links>
         </WebView>
