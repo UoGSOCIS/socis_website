@@ -1,3 +1,3 @@
-import NavDrawer from './NavDrawer';
+import NavDrawer from './navDrawer';
 
 export default NavDrawer;
