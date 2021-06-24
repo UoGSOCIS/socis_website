@@ -3,7 +3,7 @@ import {
   Toolbar, Button, AppBar, Hidden,
 } from '@material-ui/core';
 import styled from 'styled-components';
-import NavDrawer from './navdrawer';
+import NavDrawer from './components';
 import logo from '../../assets/socis_logo.png';
 
 const navLinks = [
