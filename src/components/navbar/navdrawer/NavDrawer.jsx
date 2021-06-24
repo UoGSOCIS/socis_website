@@ -42,6 +42,8 @@ function NavDrawer({ navLinks }) {
         open={open}
         onKeyDown={toggleDrawer(false)}
         onClick={toggleDrawer(false)}
+        onClose={toggleDrawer(false)}
+        onOpen={toggleDrawer(true)}
       >
         {navDrawerList()}
       </SwipeableDrawer>
