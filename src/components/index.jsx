@@ -2,6 +2,7 @@ import NavBar from './navbar';
 import Footer from './footer';
 import { LearnMoreBtn, ReturnHomeBtn } from './buttons';
 import useViewport from './viewport';
+import ContentWrapper from './ContentWrapper';
 
 export {
   NavBar,
@@ -9,4 +10,5 @@ export {
   LearnMoreBtn,
   ReturnHomeBtn,
   useViewport,
+  ContentWrapper,
 };
