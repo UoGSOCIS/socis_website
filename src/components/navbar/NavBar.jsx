@@ -45,8 +45,7 @@ const StyledToolbar = styled(Toolbar)`
   justify-content: space-between
 `;
 
-const Links = styled.div`
-`;
+const Links = styled.div``;
 
 const Image = styled.img`
   margin-right: 0.5rem;
