@@ -4,13 +4,13 @@ import SocialMedia from './components/socialMedia';
 
 function ContactPage() {
   return (
-    <div className="contact">
+    <div className="contact-main" style={styles.main}>
       <NavBar />
       <h1 style={styles.header}>Contact SOCIS</h1>
       <p style={styles.description}>
         We would love to hear your comments, questions, suggestions, or feedback! Please email us at
         {' '}
-        <a href="mailto:exec@socis.ca">exec@socis.ca</a>
+        <a href="mailto:exec@socis.ca" style={styles.link}>exec@socis.ca</a>
         .
       </p>
       <SocialMedia />
@@ -19,14 +19,21 @@ function ContactPage() {
 }
 
 const styles = {
+  main: {
+    paddingBottom: '15vh',
+  },
   header: {
     textAlign: 'center',
-    marginTop: '15vh',
+    marginTop: '10vh',
     fontSize: '54px',
   },
   description: {
     textAlign: 'center',
     fontSize: '22px',
+  },
+  link: {
+    color: 'black',
+    textDecoration: 'none',
   },
 };
 
