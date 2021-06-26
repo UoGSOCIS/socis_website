@@ -1,18 +1,14 @@
 import React from 'react';
 import { ContentWrapper } from '../../components';
-import Header from './components/header';
-import Meeting from './components/meeting';
-import Exec from './components/exec';
+import { Header, Meeting, Exec } from './components';
 
 function AboutPage() {
   return (
-    <>
-      <ContentWrapper>
-        <Header />
-        <Meeting />
-        <Exec />
-      </ContentWrapper>
-    </>
+    <ContentWrapper>
+      <Header />
+      <Meeting />
+      <Exec />
+    </ContentWrapper>
   );
 }
 

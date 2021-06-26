@@ -1,6 +1,6 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import { LearnMoreBtn, useViewport } from '../../components';
+import { LearnMoreBtn, useViewport } from '../../../components';
 
 function Subheader2() {
   const { width } = useViewport();

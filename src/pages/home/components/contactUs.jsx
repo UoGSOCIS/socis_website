@@ -1,5 +1,5 @@
 import React from 'react';
-import { LearnMoreBtn } from '../../components';
+import { LearnMoreBtn } from '../../../components';
 
 function Subheader3() {
   return (
