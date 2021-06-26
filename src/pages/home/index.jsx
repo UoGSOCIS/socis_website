@@ -24,6 +24,7 @@ const styles = {
   },
   banner: {
     height: '100vh',
+    top: '0',
   },
   subheaders: {
     backgroundColor: '#F5F5F5',
