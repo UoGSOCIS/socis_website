@@ -9,19 +9,17 @@ import makersSpacePolicy from './assets/MakersSpacePolicy.pdf';
 
 function PolicyPage() {
   return (
-    <>
-      <Container>
-        <Header />
-        <h2>Constitution</h2>
-        <FileViewer file={constitution} />
-        <h2>Club Space Policy</h2>
-        <FileViewer file={clubSpacePolicy} />
-        <h2>Committee and Staff Policy</h2>
-        <FileViewer file={committeeAndStaffPolicy} />
-        <h2>Makerspace Policy</h2>
-        <FileViewer file={makersSpacePolicy} />
-      </Container>
-    </>
+    <Container>
+      <Header />
+      <h2>Constitution</h2>
+      <FileViewer file={constitution} />
+      <h2>Club Space Policy</h2>
+      <FileViewer file={clubSpacePolicy} />
+      <h2>Committee and Staff Policy</h2>
+      <FileViewer file={committeeAndStaffPolicy} />
+      <h2>Makerspace Policy</h2>
+      <FileViewer file={makersSpacePolicy} />
+    </Container>
   );
 }
 
