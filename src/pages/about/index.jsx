@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavBar, ContentWrapper } from '../../components';
+import { ContentWrapper } from '../../components';
 import Header from './components/header';
 import Meeting from './components/meeting';
 import Exec from './components/exec';
@@ -7,7 +7,6 @@ import Exec from './components/exec';
 function AboutPage() {
   return (
     <>
-      <NavBar />
       <ContentWrapper>
         <Header />
         <Meeting />
