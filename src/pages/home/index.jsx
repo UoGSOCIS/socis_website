@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavBar } from '../../components';
 import Header from './header';
 import Subheader from './whoAreWe';
 import Subheader2 from './whatDoWeDo';
@@ -9,7 +8,6 @@ function HomePage() {
   return (
     <div style={styles.main}>
       <div style={styles.banner}>
-        <NavBar style={{ position: 'absolute' }} />
         <Header />
       </div>
       <div style={styles.subheaders}>

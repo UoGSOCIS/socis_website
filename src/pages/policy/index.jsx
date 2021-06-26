@@ -1,6 +1,5 @@
 import React from 'react';
 import Container from '@material-ui/core/Container';
-import { NavBar } from '../../components';
 import Header from './header';
 import FileViewer from './fileViewer';
 
@@ -12,7 +11,6 @@ import makersSpacePolicy from '../../assets/MakersSpacePolicy.pdf';
 function PolicyPage() {
   return (
     <>
-      <NavBar />
       <Container>
         <Header />
         <h2>Constitution</h2>

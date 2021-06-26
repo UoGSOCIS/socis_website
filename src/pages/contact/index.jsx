@@ -1,11 +1,9 @@
 import React from 'react';
-import { NavBar } from '../../components';
 import SocialMedia from './components/socialMedia';
 
 function ContactPage() {
   return (
     <div className="contact-main" style={styles.main}>
-      <NavBar />
       <h1 style={styles.header}>Contact SOCIS</h1>
       <p style={styles.description}>
         We would love to hear your comments, questions, suggestions, or feedback! Please email us at
