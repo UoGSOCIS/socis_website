@@ -7,13 +7,13 @@ function ClubPage() {
     <div className="club">
       <NavBar />
       <div className="ClubPage" style={styles.page}>
-        <div className="GCC">
+        <div className="GCC" style={styles.club}>
           <div className="Picture" style={styles.picture}>
             <img
               src={gcc}
               alt="GCC logo"
-              height="250"
-              width="250"
+              height="250vh"
+              width="250vw"
             />
           </div>
           <div className="GCC Blurb" style={styles.text}>
@@ -32,13 +32,13 @@ function ClubPage() {
           </div>
         </div>
         <br />
-        <div className="GWICS">
+        <div className="GWICS" style={styles.club}>
           <div className="GwicsPicture" style={styles.picture}>
             <img
               src={gcc}
               alt="GCC logo"
-              height="250"
-              width="250"
+              height="250vh"
+              width="250vw"
             />
           </div>
           <div className="GWICS Blurb" style={styles.text}>
@@ -57,13 +57,13 @@ function ClubPage() {
           </div>
         </div>
         <br />
-        <div className="GWICS">
-          <div className="GwicsPicture" style={styles.picture}>
+        <div className="DSC" style={styles.club}>
+          <div className="DSC Picture" style={styles.picture}>
             <img
               src={gcc}
               alt="GCC logo"
-              height="250"
-              width="250"
+              height="250vh"
+              width="250vw"
             />
           </div>
           <div className="DSC Blurb" style={styles.text}>
@@ -82,6 +82,7 @@ function ClubPage() {
           </div>
         </div>
       </div>
+      <div style={styles.preFooter} />
       <Footer />
     </div>
   );
@@ -89,18 +90,29 @@ function ClubPage() {
 
 const styles = {
   page: {
-    paddingTop: 25,
-    paddingLeft: 75,
-    paddingRight: 75,
-    paddingBottom: 25,
-    height: 1000,
+    paddingTop: '2.0rem',
+    paddingLeft: '2.0rem',
+    paddingRight: '2.0rem',
+    paddingBottom: '2.0rem',
+    // height: '200vh',
+  },
+  club: {
+    paddingBottom: '1.0rem',
+    paddingTop: '1.0rem',
+  },
+  preFooter: {
+    paddingBottom: '2.0rem',
+    paddingTop: '2.0rem',
   },
   picture: {
-    width: 300,
+    // width: '300vw',
     float: 'left',
+    paddingRight: '2.0rem',
   },
   text: {
-    width: 1000,
+    // width: '50vw',
+    // paddingLeft: '2.0rem',
+    // paddingRight: '2.0rem',
   },
   button: {
     textAlign: 'center',
