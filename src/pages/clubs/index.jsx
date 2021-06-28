@@ -1,6 +1,8 @@
 import React from 'react';
 import { LearnMoreBtn } from '../../components';
-import gcc from './gcc.jpg';
+import gcc from './assets/gcc.jpg';
+import gwics from './assets/gwics.jpg';
+import dsc from './assets/dsc.jpg';
 
 function ClubPage() {
   return (
@@ -34,7 +36,7 @@ function ClubPage() {
         <div className="GWICS" style={styles.club}>
           <div className="GwicsPicture" style={styles.picture}>
             <img
-              src={gcc}
+              src={gwics}
               alt="GCC logo"
               height="250vh"
               width="250vw"
@@ -59,7 +61,7 @@ function ClubPage() {
         <div className="DSC" style={styles.club}>
           <div className="DSC Picture" style={styles.picture}>
             <img
-              src={gcc}
+              src={dsc}
               alt="GCC logo"
               height="250vh"
               width="250vw"
