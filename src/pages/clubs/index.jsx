@@ -2,9 +2,9 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { GCC, GWICS, DSC } from './components';
 import { ContentWrapper } from '../../components';
-import gccLogo from './assets/gcc.jpg';
-import gwicsLogo from './assets/gwics.jpg';
-import dscLogo from './assets/dsc.jpg';
+import gccLogo from './assets/gcc.png';
+import gwicsLogo from './assets/gwics.png';
+import dscLogo from './assets/dsc.png';
 
 function ClubPage() {
   return (
