@@ -1,11 +1,10 @@
 import React from 'react';
-import { NavBar, Footer, LearnMoreBtn } from '../../components';
+import { LearnMoreBtn } from '../../components';
 import gcc from './gcc.jpg';
 
 function ClubPage() {
   return (
     <div className="club">
-      <NavBar />
       <div className="ClubPage" style={styles.page}>
         <div className="GCC" style={styles.club}>
           <div className="Picture" style={styles.picture}>
@@ -83,7 +82,6 @@ function ClubPage() {
         </div>
       </div>
       <div style={styles.preFooter} />
-      <Footer />
     </div>
   );
 }

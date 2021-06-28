@@ -1,3 +1,3 @@
-import useViewport from './UseViewport';
+import useViewport from './useViewport';
 
 export default useViewport;

@@ -1,12 +1,6 @@
 name: CI
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
-  workflow_dispatch:
+on: [push, pull_request]
 
 jobs:
   build:
@@ -23,9 +17,6 @@ jobs:
 
       - name: Run linter ⚡
         run: yarn lint
-
-      - name: Run tests ✅
-        run: yarn test
 
       - name: Run build 🔨
         run: yarn build
