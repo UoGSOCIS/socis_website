@@ -1,6 +1,7 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import { LearnMoreBtn, useViewport } from '../../../components';
+import image from '../../../assets/placeholder.png';
 
 function Subheader2() {
   const { width } = useViewport();
@@ -18,7 +19,7 @@ function Subheader2() {
       <h1>What do we do?</h1>
       <Grid container spacing={5}>
         <Grid item md={3} sm={12}>
-          <img src="placeholder.png" alt="placeholder" style={{ maxWidth: '100%' }} />
+          <img src={image} alt="placeholder" style={{ maxWidth: '100%' }} />
         </Grid>
         <Grid item md={9} sm={12}>
           <p>
