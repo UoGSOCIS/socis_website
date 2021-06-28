@@ -1,87 +1,15 @@
 import React from 'react';
-import { LearnMoreBtn } from '../../components';
-import gcc from './assets/gcc.jpg';
-import gwics from './assets/gwics.jpg';
-import dsc from './assets/dsc.jpg';
+import { GCC, GWICS, DSC } from './components';
 
 function ClubPage() {
   return (
     <div className="club">
       <div className="ClubPage" style={styles.page}>
-        <div className="GCC" style={styles.club}>
-          <div className="Picture" style={styles.picture}>
-            <img
-              src={gcc}
-              alt="GCC logo"
-              height="250vh"
-              width="250vw"
-            />
-          </div>
-          <div className="GCC Blurb" style={styles.text}>
-            <h1>Guelph Coding Community</h1>
-            <p>
-              This should be a description of the Guelph Coding Community that includes
-              information about the Guelph Coding Community such as what they do, a bit
-              about their history, some of their events, other filler information because I
-              dont want to think about what to write here. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Phasellus tempus congue libero ac tempor. Integer pretium at nunc et
-              vulputate. Pellentesque fringilla sagittis quam.
-            </p>
-            <div style={styles.button}>
-              <LearnMoreBtn href="/Learn More" color="#FD8900" />
-            </div>
-          </div>
-        </div>
+        <GCC />
         <br />
-        <div className="GWICS" style={styles.club}>
-          <div className="GwicsPicture" style={styles.picture}>
-            <img
-              src={gwics}
-              alt="GCC logo"
-              height="250vh"
-              width="250vw"
-            />
-          </div>
-          <div className="GWICS Blurb" style={styles.text}>
-            <h1>Guelph Women in Computer Science</h1>
-            <p>
-              This should be a description of the Guelph Coding Community that includes
-              information about the Guelph Coding Community such as what they do, a bit
-              about their history, some of their events, other filler information because I
-              dont want to think about what to write here. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Phasellus tempus congue libero ac tempor. Integer pretium at nunc et
-              vulputate. Pellentesque fringilla sagittis quam.
-            </p>
-            <div style={styles.button}>
-              <LearnMoreBtn href="/Learn More" color="#FD8900" />
-            </div>
-          </div>
-        </div>
+        <GWICS />
         <br />
-        <div className="DSC" style={styles.club}>
-          <div className="DSC Picture" style={styles.picture}>
-            <img
-              src={dsc}
-              alt="GCC logo"
-              height="250vh"
-              width="250vw"
-            />
-          </div>
-          <div className="DSC Blurb" style={styles.text}>
-            <h1>Developer Student Club</h1>
-            <p>
-              This should be a description of the Guelph Coding Community that includes
-              information about the Guelph Coding Community such as what they do, a bit
-              about their history, some of their events, other filler information because I
-              dont want to think about what to write here. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Phasellus tempus congue libero ac tempor. Integer pretium at nunc et
-              vulputate. Pellentesque fringilla sagittis quam.
-            </p>
-            <div style={styles.button}>
-              <LearnMoreBtn href="/Learn More" color="#FD8900" />
-            </div>
-          </div>
-        </div>
+        <DSC />
       </div>
       <div style={styles.preFooter} />
     </div>
