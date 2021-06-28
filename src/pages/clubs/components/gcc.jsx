@@ -14,7 +14,7 @@ function GCC() {
         vulputate. Pellentesque fringilla sagittis quam.
       </Bio>
       <div style={{ textAlign: 'center' }}>
-        <Link href="https://soorajmodi.com" target="_blank" rel="noreferrer">Instagram</Link>
+        <Link href="https://www.instagram.com/gcc_uog" target="_blank" rel="noreferrer">Instagram</Link>
       </div>
     </>
   );

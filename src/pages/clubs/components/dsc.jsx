@@ -14,7 +14,7 @@ function DSC() {
         vulputate. Pellentesque fringilla sagittis quam.
       </Bio>
       <div style={{ textAlign: 'center' }}>
-        <Link href="https://soorajmodi.com" target="_blank" rel="noreferrer">Instagram</Link>
+        <Link href="https://www.instagram.com/dsc_uofg" target="_blank" rel="noreferrer">Instagram</Link>
       </div>
     </>
   );

@@ -14,7 +14,7 @@ function GWICS() {
         vulputate. Pellentesque fringilla sagittis quam.
       </Bio>
       <div style={{ textAlign: 'center' }}>
-        <Link href="https://gwics.org/" target="_blank" rel="noreferrer">gwics.org</Link>
+        <Link href="https://gwics.org/" target="_blank" rel="noreferrer">Website</Link>
       </div>
     </>
   );
