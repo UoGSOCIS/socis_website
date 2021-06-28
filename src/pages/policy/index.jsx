@@ -1,6 +1,6 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
 import { FileViewer, Header } from './components';
+import { ContentWrapper } from '../../components';
 
 import constitution from './assets/Constitution.pdf';
 import clubSpacePolicy from './assets/ClubSpacePolicy.pdf';
@@ -9,7 +9,7 @@ import makersSpacePolicy from './assets/MakersSpacePolicy.pdf';
 
 function PolicyPage() {
   return (
-    <Container>
+    <ContentWrapper>
       <Header />
       <h2>Constitution</h2>
       <FileViewer file={constitution} />
@@ -19,7 +19,7 @@ function PolicyPage() {
       <FileViewer file={committeeAndStaffPolicy} />
       <h2>Makerspace Policy</h2>
       <FileViewer file={makersSpacePolicy} />
-    </Container>
+    </ContentWrapper>
   );
 }
 
