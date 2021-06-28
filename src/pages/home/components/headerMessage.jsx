@@ -1,5 +1,5 @@
 import React from 'react';
-import { useViewport } from '../../components';
+import { useViewport } from '../../../components';
 
 function HeaderMessage() {
   const { width } = useViewport();
@@ -9,15 +9,15 @@ function HeaderMessage() {
     <h1
       className="animate__animated animate__fadeInRight"
       style={
-      width > 960
-        ? styles.message
-        : styles.messageMobile
-    }
+        width > 960
+          ? styles.message
+          : styles.messageMobile
+      }
     >
       {
-          width > breakpoint
-            ? 'We are the Society of Computing and Information Science'
-            : 'We are SOCIS'
+        width > breakpoint
+          ? 'We are the Society of Computing and Information Science'
+          : 'We are SOCIS'
       }
     </h1>
   );

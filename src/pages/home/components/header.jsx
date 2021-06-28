@@ -1,6 +1,7 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import HeaderMessage from './headerMessage';
+import logo from '../../../assets/socis_logo.png';
 
 function Header() {
   return (
@@ -14,7 +15,7 @@ function Header() {
       >
         <Grid item md={4} sm={12}>
           <div style={{ textAlign: 'center', width: '100%' }}>
-            <img src="socisWhite.png" alt="Socis logo" className="animate__animated animate__fadeIn" style={{ height: '50vh' }} />
+            <img src={logo} alt="SOCIS Logo" className="animate__animated animate__fadeIn" style={{ height: '50vh' }} />
           </div>
         </Grid>
         <Grid item md={8} sm={12}>

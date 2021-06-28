@@ -1,8 +1,7 @@
 import React from 'react';
-import Header from './header';
-import Subheader from './whoAreWe';
-import Subheader2 from './whatDoWeDo';
-import Subheader3 from './contactUs';
+import {
+  Header, Subheader, Subheader2, Subheader3,
+} from './components';
 
 function HomePage() {
   return (

@@ -2,7 +2,7 @@ import NavBar from './navbar';
 import Footer from './footer';
 import { LearnMoreBtn, ReturnHomeBtn } from './buttons';
 import useViewport from './viewport';
-import ContentWrapper from './ContentWrapper';
+import ContentWrapper from './contentWrapper';
 
 export {
   NavBar,

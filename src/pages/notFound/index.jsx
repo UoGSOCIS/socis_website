@@ -1,24 +1,21 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import { NavBar, ReturnHomeBtn } from '../../components';
+import { ReturnHomeBtn } from '../../components';
 
 function NotFoundPage() {
   return (
-    <>
-      <NavBar />
-      <Grid
-        container
-        spacing={0}
-        direction="column"
-        alignItems="center"
-        justify="center"
-        style={styles.grid}
-      >
-        <h1 style={styles.header}>404 not found</h1>
-        <p>Looks like you took a wrong turn :(</p>
-        <ReturnHomeBtn />
-      </Grid>
-    </>
+    <Grid
+      container
+      spacing={0}
+      direction="column"
+      alignItems="center"
+      justify="center"
+      style={styles.grid}
+    >
+      <h1 style={styles.header}>404 not found</h1>
+      <p>Looks like you took a wrong turn :(</p>
+      <ReturnHomeBtn />
+    </Grid>
   );
 }
 
