@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { LearnMoreBtn } from '../../../components';
 import image from '../../../assets/placeholder.png';
 
-function Subheader() {
+function WhoWeAre() {
   return (
     <Wrapper>
       <Grid container spacing={5}>
@@ -16,12 +16,12 @@ function Subheader() {
             deserunt ad veniam. Qui non officia Lorem sit ex. Tempor minim ad velit
             ex aliquip ea minim sunt. Nulla sit ut tempor magna.
           </p>
+          <LearnMoreBtn href="/about" />
         </Grid>
         <Grid item md={3} sm={12}>
           <Image src={image} alt="placeholder" />
         </Grid>
       </Grid>
-      <LearnMoreBtn href="/about" />
     </Wrapper>
   );
 }
@@ -37,4 +37,4 @@ const Image = styled.img`
  max-width: 100%;
 `;
 
-export default Subheader;
+export default WhoWeAre;

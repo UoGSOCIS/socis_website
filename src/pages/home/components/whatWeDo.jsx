@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { LearnMoreBtn } from '../../../components';
 import image from '../../../assets/placeholder.png';
 
-function Subheader2() {
+function WhatWeDo() {
   return (
     <Wrapper>
       <h1>What we do...</h1>
@@ -21,9 +21,9 @@ function Subheader2() {
             Ullamco excepteur nostrud dolore ad mollit enim occaecat et anim tempor
             sint pariatur dolore.
           </p>
+          <LearnMoreBtn href="/clubs" />
         </Grid>
       </Grid>
-      <LearnMoreBtn href="/clubs" />
     </Wrapper>
   );
 }
@@ -41,4 +41,4 @@ const Image = styled.img`
  max-width: 100%;
 `;
 
-export default Subheader2;
+export default WhatWeDo;

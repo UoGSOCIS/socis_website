@@ -19,12 +19,9 @@ function HeaderMessage() {
 
 const Message = styled.p`
   color: white;
-  text-align: left;
+  text-align: center;
   font-size: 76px;
   margin-top: 0;
-  @media (max-width: 1279px) {
-    text-align: center;
-  }
 `;
 
 export default HeaderMessage;

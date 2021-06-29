@@ -1,7 +1,7 @@
 import React from 'react';
 import { LearnMoreBtn } from '../../../components';
 
-function Subheader3() {
+function HowToContact() {
   return (
     <div className="subheader3" style={{ textAlign: 'center' }}>
       <h1>How to contact us...</h1>
@@ -14,4 +14,4 @@ function Subheader3() {
   );
 }
 
-export default Subheader3;
+export default HowToContact;

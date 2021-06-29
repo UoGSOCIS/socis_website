@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {
-  Header, Subheader, Subheader2, Subheader3,
+  Header, WhoWeAre, WhatWeDo, HowToContact,
 } from './components';
 
 function HomePage() {
@@ -11,9 +11,9 @@ function HomePage() {
         <Header />
       </Banner>
       <HomeSubheaders>
-        <Subheader />
-        <Subheader2 />
-        <Subheader3 />
+        <WhoWeAre />
+        <WhatWeDo />
+        <HowToContact />
       </HomeSubheaders>
     </HomeWrapper>
   );
