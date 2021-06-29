@@ -1,38 +1,39 @@
 import React from 'react';
+import styled from 'styled-components';
 import {
   Header, Subheader, Subheader2, Subheader3,
 } from './components';
 
 function HomePage() {
   return (
-    <div style={styles.main}>
-      <div style={styles.banner}>
+    <HomeWrapper>
+      <Banner>
         <Header />
-      </div>
-      <div style={styles.subheaders}>
+      </Banner>
+      <HomeSubheaders>
         <Subheader />
         <Subheader2 />
         <Subheader3 />
-      </div>
-    </div>
+      </HomeSubheaders>
+    </HomeWrapper>
   );
 }
 
-const styles = {
-  main: {
-    paddingBottom: '3.0rem',
-  },
-  banner: {
-    height: '100vh',
-  },
-  subheaders: {
-    backgroundColor: '#F5F5F5',
-    paddingTop: '10vh',
-    paddingBottom: '10vh',
-    paddingLeft: '10vw',
-    paddingRight: '10vw',
-    fontSize: '20px',
-  },
-};
+const HomeWrapper = styled.div`
+  padding-bottom: 5vh;
+`;
+
+const Banner = styled.div`
+  height: 100vh;
+`;
+
+const HomeSubheaders = styled.div`
+  background-color: #F5F5F5;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  font-size: 20px;
+`;
 
 export default HomePage;
