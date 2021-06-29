@@ -1,9 +1,9 @@
-import GCC from './gcc';
-import GWICS from './gwics';
-import DSC from './dsc';
+import Header from './header';
+import Clubs from './clubs';
+import NewAffiliate from './newAffiliate';
 
 export {
-  GCC,
-  GWICS,
-  DSC,
+  Header,
+  Clubs,
+  NewAffiliate,
 };
