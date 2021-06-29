@@ -14,10 +14,10 @@ function Header() {
         alignItems="center"
         style={{ height: '90%', width: '100%' }}
       >
-        <LogoGrid item md={4} sm={12}>
+        <LogoGrid item lg={4} md={12}>
           <Image src={logo} alt="SOCIS Logo" className="animate__animated animate__fadeIn" />
         </LogoGrid>
-        <Grid item md={8} sm={12}>
+        <Grid item lg={8} md={12}>
           <HeaderMessage />
         </Grid>
       </Grid>

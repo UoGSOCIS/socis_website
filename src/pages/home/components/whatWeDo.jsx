@@ -1,25 +1,16 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import { LearnMoreBtn, useViewport } from '../../../components';
+import styled from 'styled-components';
+import { LearnMoreBtn } from '../../../components';
 import image from '../../../assets/placeholder.png';
 
 function Subheader2() {
-  const { width } = useViewport();
-  const breakpoint = 959;
-
   return (
-    <div
-      className="subheader2"
-      style={
-      width > breakpoint
-        ? styles.subheader
-        : styles.subheaderMobile
-      }
-    >
+    <Wrapper>
       <h1>What we do...</h1>
       <Grid container spacing={5}>
         <Grid item md={3} sm={12}>
-          <img src={image} alt="placeholder" style={{ maxWidth: '100%' }} />
+          <Image src={image} alt="placeholder" />
         </Grid>
         <Grid item md={9} sm={12}>
           <p>
@@ -33,21 +24,21 @@ function Subheader2() {
         </Grid>
       </Grid>
       <LearnMoreBtn href="/clubs" />
-    </div>
+    </Wrapper>
   );
 }
 
-const styles = {
-  subheader: {
-    paddingTop: '8vh',
-    paddingBottom: '8vh',
-    textAlign: 'right',
-  },
-  subheaderMobile: {
-    paddingTop: '5vh',
-    paddingBottom: '5vh',
-    textAlign: 'center',
-  },
-};
+const Wrapper = styled.div`
+  padding-top: 8vh;
+  padding-bottom: 8vh;
+  text-align: right;
+  @media (max-width: 960px) {
+    text-align: center;
+  }
+`;
+
+const Image = styled.img`
+ max-width: 100%;
+`;
 
 export default Subheader2;

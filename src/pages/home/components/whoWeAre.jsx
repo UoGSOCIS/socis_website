@@ -1,21 +1,12 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import { LearnMoreBtn, useViewport } from '../../../components';
+import styled from 'styled-components';
+import { LearnMoreBtn } from '../../../components';
 import image from '../../../assets/placeholder.png';
 
 function Subheader() {
-  const { width } = useViewport();
-  const breakpoint = 959;
-
   return (
-    <div
-      className="subheader"
-      style={
-      width > breakpoint
-        ? { textAlign: 'left' }
-        : { textAlign: 'center' }
-    }
-    >
+    <Wrapper>
       <Grid container spacing={5}>
         <Grid item md={9} sm={12}>
           <h1>Who we are...</h1>
@@ -27,12 +18,23 @@ function Subheader() {
           </p>
         </Grid>
         <Grid item md={3} sm={12}>
-          <img src={image} alt="placeholder" style={{ maxWidth: '100%' }} />
+          <Image src={image} alt="placeholder" />
         </Grid>
       </Grid>
       <LearnMoreBtn href="/about" />
-    </div>
+    </Wrapper>
   );
 }
+
+const Wrapper = styled.div`
+  text-align: left;
+  @media (max-width: 960px) {
+    text-align: center;
+  }
+`;
+
+const Image = styled.img`
+ max-width: 100%;
+`;
 
 export default Subheader;
