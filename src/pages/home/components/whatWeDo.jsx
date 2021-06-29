@@ -16,7 +16,7 @@ function Subheader2() {
         : styles.subheaderMobile
       }
     >
-      <h1>What do we do?</h1>
+      <h1>What we do...</h1>
       <Grid container spacing={5}>
         <Grid item md={3} sm={12}>
           <img src={image} alt="placeholder" style={{ maxWidth: '100%' }} />

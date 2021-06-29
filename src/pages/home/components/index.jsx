@@ -1,6 +1,6 @@
 import Header from './header';
-import Subheader from './whoAreWe';
-import Subheader2 from './whatDoWeDo';
+import Subheader from './whoWeAre';
+import Subheader2 from './whatWeDo';
 import Subheader3 from './contactUs';
 
 export {
