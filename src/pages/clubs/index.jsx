@@ -11,10 +11,15 @@ import dscLogo from './assets/dsc.png';
 function ClubPage() {
   return (
     <ContentWrapper>
+      <Header>SOCIS Affiliated Clubs</Header>
+      <Subtext>
+        Affiliated Clubs refer to University of Guelph Organizations that we partner with and share financial,
+        physical, and communal resources to better serve our student body and create new opportunities.
+      </Subtext>
       <Grid
         container
         direction="row"
-        justify="space-evenly"
+        justify="center"
         alignItems="center"
         spacing={2}
       >
@@ -39,16 +44,41 @@ function ClubPage() {
           <DSC />
         </Grid>
       </Grid>
+      <ContactText>
+        Interested in becoming an affiliated club?
+        {' '}
+        <a href="/contact" style={{ color: 'black', textDecoration: 'none' }}>Contact us</a>
+        {' '}
+        today!
+      </ContactText>
     </ContentWrapper>
   );
 }
+
+const Header = styled.p`
+  text-align: center;
+  margin-top: 10vh;
+  font-size: 54px;
+`;
+
+const Subtext = styled.p`
+  font-size: 22px;
+  text-align: center;
+`;
+
+const ContactText = styled.p`
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  font-size: 28px;
+  text-align: center;
+`;
 
 const Image = styled.img`
   width: 100%;
   border-radius: 5px;
   max-height: 40vh;
-  max-width: 25vw;
-  min-width: 15vw;
+  max-width: 250px;
+  min-width: 150px;
 `;
 
 export default ClubPage;
