@@ -27,7 +27,7 @@ const styles = {
   message: {
     color: 'white',
     marginTop: 0,
-    fontSize: '54px',
+    fontSize: '76px',
     marginLeft: '0.5vw',
     marginRight: '0.1vw',
     paddingLeft: '30px',
