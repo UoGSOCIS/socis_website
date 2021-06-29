@@ -11,14 +11,10 @@ function PolicyPage() {
   return (
     <ContentWrapper>
       <Header />
-      <h2>Constitution</h2>
-      <FileViewer file={constitution} />
-      <h2>Club Space Policy</h2>
-      <FileViewer file={clubSpacePolicy} />
-      <h2>Committee and Staff Policy</h2>
-      <FileViewer file={committeeAndStaffPolicy} />
-      <h2>Makerspace Policy</h2>
-      <FileViewer file={makersSpacePolicy} />
+      <FileViewer heading="Constitution" file={constitution} />
+      <FileViewer heading="Club Space Policy" file={clubSpacePolicy} />
+      <FileViewer heading="Committee and Staff Policy" file={committeeAndStaffPolicy} />
+      <FileViewer heading="Makerspace Policy" file={makersSpacePolicy} />
     </ContentWrapper>
   );
 }
