@@ -18,8 +18,12 @@ LearnMoreBtn.defaultProps = {
 
 const style = {
   backgroundColor: 'rgb(102, 0, 0)',
-  padding: '10px 20px 10px 20px',
   fontSize: '14px',
+  align: 'center',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  width: '200px',
 };
 
 export default LearnMoreBtn;
