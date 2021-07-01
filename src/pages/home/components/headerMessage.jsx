@@ -1,49 +1,27 @@
 import React from 'react';
+import styled from 'styled-components';
 import { useViewport } from '../../../components';
 
 function HeaderMessage() {
   const { width } = useViewport();
-  const breakpoint = 500;
+  const breakpoint = 676;
 
   return (
-    <h1
-      className="animate__animated animate__fadeInRight"
-      style={
-        width > 960
-          ? styles.message
-          : styles.messageMobile
-      }
-    >
+    <Message>
       {
         width > breakpoint
           ? 'We are the Society of Computing and Information Science'
           : 'We are SOCIS'
       }
-    </h1>
+    </Message>
   );
 }
 
-const styles = {
-  message: {
-    color: 'white',
-    marginTop: 0,
-    fontSize: '54px',
-    marginLeft: '0.5vw',
-    marginRight: '0.1vw',
-    paddingLeft: '30px',
-    paddingRight: '30px',
-    textAlign: 'left',
-  },
-  messageMobile: {
-    color: 'white',
-    marginTop: 0,
-    fontSize: '54px',
-    marginLeft: '0.5vw',
-    marginRight: '0.1vw',
-    paddingLeft: '30px',
-    paddingRight: '30px',
-    textAlign: 'center',
-  },
-};
+const Message = styled.p`
+  color: white;
+  text-align: center;
+  font-size: 76px;
+  margin-top: 0;
+`;
 
 export default HeaderMessage;

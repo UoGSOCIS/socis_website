@@ -1,11 +1,11 @@
 import Header from './header';
-import Subheader from './whoAreWe';
-import Subheader2 from './whatDoWeDo';
-import Subheader3 from './contactUs';
+import WhoWeAre from './whoWeAre';
+import WhatWeDo from './whatWeDo';
+import HowToContact from './howToContact';
 
 export {
   Header,
-  Subheader,
-  Subheader2,
-  Subheader3,
+  WhoWeAre,
+  WhatWeDo,
+  HowToContact,
 };
