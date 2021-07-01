@@ -1,23 +1,22 @@
 import React from 'react';
+import styled from 'styled-components';
 import Router from './router';
 import { Footer, NavBar } from './components';
 
 function App() {
   return (
-    <div className="App" style={styles.all}>
+    <Wrapper>
       <NavBar />
       <Router />
       <Footer />
-    </div>
+    </Wrapper>
   );
 }
 
-const styles = {
-  all: {
-    position: 'relative',
-    minHeight: '100vh',
-    backgroundColor: '#F5F5F5',
-  },
-};
+const Wrapper = styled.div`
+  position: relative;
+  min-height: 100vh;
+  background-color: #F5F5F5;
+`;
 
 export default App;
