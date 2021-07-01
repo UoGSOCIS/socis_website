@@ -2,11 +2,7 @@ import React from 'react';
 import { Button } from '@material-ui/core';
 
 function ReturnHomeBtn() {
-  return (
-    <div className="LearnMoreBtn">
-      <Button variant="contained" color="primary" href="/" style={style}>Return Home</Button>
-    </div>
-  );
+  return <Button variant="contained" color="primary" href="/" style={style}>Return Home</Button>;
 }
 
 const style = {
