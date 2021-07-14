@@ -4,6 +4,10 @@ import VPExternal from '../assets/vp-external.png';
 import VPSocial from '../assets/vp-social.jpeg';
 import VPFinance from '../assets/vp-finance.jpeg';
 import VPCommunication from '../assets/vp-communication.png';
+import SecondYearRep from '../assets/second-year-rep.jpeg';
+import ThirdYearRep from '../assets/third-year-rep.jpeg';
+import FourthYearRep from '../assets/fourth-year-rep.jpeg';
+import MerchCoordinator from '../assets/merch-coordinator.jpeg';
 
 export default {
   exec: [
@@ -54,25 +58,25 @@ export default {
     {
       position: 'Second Year Representative',
       name: 'Trisha Khanna',
-      image: 'https://homepages.cae.wisc.edu/~ece533/images/cat.png',
+      image: SecondYearRep,
       description: 'My name is Trisha and I\'m a second year student in the Computer Science Co-op program at UofG. As SOCIS\'s Second Year Rep, my role involves representing my peers by coming up with skill improvement and career development ideas with our SOCIS Executive Team. Off-duty, you can find me watching a med show or reading a book in the fantasy genre :slightly_smiling_face:\n',
     },
     {
       position: 'Third Year Representative',
       name: 'Ryan Sheppard',
-      image: 'https://homepages.cae.wisc.edu/~ece533/images/cat.png',
+      image: ThirdYearRep,
       description: 'Hey! I\'m Ryan and I\'m the third year representative at SOCIS and Im stoked to be a part of shaping SOCS student experience. I\'m currently a front-end developer, but I really want to get into embedded systems. When I\'m not programming, I\'m most-likely playing video games or BMXing. I\'m always down to talk, so feel free to email me or contact me on gryph.slack.com.',
     },
     {
       position: 'Fourth Year Representative',
       name: 'Habiba Mostafa',
-      image: 'https://homepages.cae.wisc.edu/~ece533/images/cat.png',
+      image: FourthYearRep,
       description: 'My name is Trisha and I\'m a second year student in the Computer Science Co-op program at UofG. As SOCIS\'s Second Year Rep, my role involves representing my peers by coming up with skill improvement and career development ideas with our SOCIS Executive Team. Off-duty, you can find me watching a med show or reading a book in the fantasy genre :slightly_smiling_face:\n',
     },
     {
       position: 'Merchandise Coordinator',
       name: 'Smaranjeet Singh',
-      image: 'https://homepages.cae.wisc.edu/~ece533/images/cat.png',
+      image: MerchCoordinator,
       description: 'Hi guys, my name is Smaranjeet Singh, a second-year student majoring in computer science at the University of Guelph. I am the merch coordinator for the year 2021-2022. I am really passionate about graphic design and love to play tennis. My role as a merchandise coordinator involves managing the development of the merchandise design, rolling out discounts for students, and managing the facilitation of sales and budgeting the inventory.\n',
     },
   ],
