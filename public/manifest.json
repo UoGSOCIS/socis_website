@@ -3,7 +3,7 @@
   "name": "Website for the Society of Computing and Information Science",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "socis.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }
