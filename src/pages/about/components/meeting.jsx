@@ -1,27 +1,41 @@
 import React from 'react';
+import styled from 'styled-components';
 
 function Meeting() {
   return (
     <>
-      <h1>Meeting Information</h1>
-      <p>
+      <Title>Meeting Information</Title>
+      <Subtext>
         We meet every Thursday at 5:30pm in Reynolds 0001. Join #socis on
         {' '}
-        <a href="https://gryph.slack.com" rel="noopener noreferrer" target="_blank" style={style}>GryphSlack</a>
+        <Link href="https://gryph.slack.com" rel="noopener noreferrer" target="_blank">GryphSlack</Link>
         {' '}
         or follow our
         {' '}
-        <a href="https://www.instagram.com/socis.uog" rel="noopener noreferrer" target="_blank" style={style}>Instagram</a>
+        <Link href="https://www.instagram.com/socis.uog" rel="noopener noreferrer" target="_blank">Instagram</Link>
         {' '}
         for the latest meeting information.
-      </p>
+      </Subtext>
     </>
   );
 }
 
-const style = {
-  textDecoration: 'none',
-  color: 'black',
-};
+const Title = styled.p`
+  text-align: left;
+  margin-top: 10vh;
+  font-size: 36px;
+  margin-bottom: 0;
+`;
+
+const Subtext = styled.p`
+  font-size: 22px;
+  text-align: left;
+  marginTop: 0;
+`;
+
+const Link = styled.a`
+  text-decoration: none;
+  color: black;
+`;
 
 export default Meeting;

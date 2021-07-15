@@ -27,7 +27,8 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
     },
   },
   media: {
-    width: '88%',
+    width: '100%',
+    height: '88%',
     marginLeft: 'auto',
     marginRight: 'auto',
     marginTop: spacing(-3),
@@ -36,9 +37,8 @@ const useStyles = makeStyles(({ breakpoints, spacing }) => ({
     backgroundColor: '#fff',
     position: 'relative',
     [breakpoints.up('md')]: {
-      width: '100%',
-      minWidth: '400px',
-      maxWidth: '800px',
+      minWidth: '300px',
+      maxWidth: '500px',
       marginLeft: spacing(-3),
       marginTop: 0,
       transform: 'translateX(-8px)',
