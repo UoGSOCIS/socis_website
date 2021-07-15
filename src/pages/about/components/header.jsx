@@ -29,7 +29,7 @@ function Header() {
 }
 
 const Title = styled.p`
-  text-align: center;
+  text-align: left;
   margin-top: 10vh;
   font-size: 54px;
   margin-bottom: 0;
@@ -37,7 +37,7 @@ const Title = styled.p`
 
 const Subtext = styled.p`
   font-size: 22px;
-  text-align: center;
+  text-align: left;
   marginTop: 0;
 `;
 

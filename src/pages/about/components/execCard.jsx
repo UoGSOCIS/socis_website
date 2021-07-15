@@ -1,80 +1,82 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardMedia from '@material-ui/core/CardMedia';
-import CardContent from '@material-ui/core/CardContent';
-import TextInfoContent from '@mui-treasury/components/content/textInfo';
-import { useBlogTextInfoContentStyles } from '@mui-treasury/styles/textInfoContent/blog';
 import PropTypes from 'prop-types';
-
-const useStyles = makeStyles(({ breakpoints, spacing }) => ({
-  root: {
-    borderRadius: spacing(2), // 16px
-    transition: '0.3s',
-    boxShadow: '0px 14px 80px rgba(34, 35, 58, 0.2)',
-    position: 'relative',
-    overflow: 'initial',
-    background: '#ffffff',
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    paddingBottom: spacing(2),
-    width: '100%',
-    marginBottom: '5vh',
-    [breakpoints.up('md')]: {
-      flexDirection: 'row',
-      paddingTop: spacing(2),
-    },
-  },
-  media: {
-    width: '100%',
-    height: '88%',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    marginTop: spacing(-3),
-    paddingBottom: '48%',
-    borderRadius: spacing(2),
-    backgroundColor: '#fff',
-    position: 'relative',
-    [breakpoints.up('md')]: {
-      minWidth: '300px',
-      maxWidth: '500px',
-      marginLeft: spacing(-3),
-      marginTop: 0,
-      transform: 'translateX(-8px)',
-    },
-  },
-  content: {
-    padding: 24,
-  },
-  cta: {
-    marginTop: 24,
-    textTransform: 'initial',
-  },
-}));
+import styled from 'styled-components';
 
 function ExecCard({
   url, position, name, content,
 }) {
-  const styles = useStyles();
-  const { ...contentStyles } = useBlogTextInfoContentStyles();
   return (
-    <Card className={(styles.root)}>
-      <CardMedia
-        className={styles.media}
-        image={url}
-      />
-      <CardContent>
-        <TextInfoContent
-          classes={contentStyles}
-          overline={position}
-          heading={name}
-          body={content}
-        />
-      </CardContent>
-    </Card>
+    <TeamCard>
+      <TeamImage src={url} />
+      <TeamCardContentWrapper>
+        <TeamCardName>{name}</TeamCardName>
+        <TeamCardPosition>{position}</TeamCardPosition>
+        <TeamCardDivider />
+        <TeamCardContent>{content}</TeamCardContent>
+      </TeamCardContentWrapper>
+    </TeamCard>
   );
 }
+
+const TeamCard = styled.div`
+  overflow: hidden;
+  width: 20vw;
+  min-width: 330px;
+  border-top-right-radius: 32px;
+  border-bottom-left-radius: 32px;
+  box-shadow: 8px 8px 64px 0 rgb(128 130 133 / 10%);
+`;
+
+const TeamImage = styled.img`
+  border: 0;
+  width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  height: 450px;
+  -o-object-fit: cover;
+  object-fit: cover;
+`;
+
+const TeamCardContentWrapper = styled.div`
+  padding: 26px 29px;
+`;
+
+const TeamCardName = styled.h6`
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;  
+`;
+
+const TeamCardPosition = styled.h6`
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: #660000;
+    text-transform: uppercase;
+`;
+
+const TeamCardDivider = styled.div`
+  width: 48px;
+  margin-bottom: 24px;
+  height: 2px;
+  background-image: linear-gradient(90deg, #d72d2f, #660000);
+`;
+
+const TeamCardContent = styled.p`
+  margin-bottom: 0;
+  line-height: 22px;
+  font-weight: 300;
+  letter-spacing: .2px;
+  white-space: break-spaces;
+  margin-top: 0;
+  padding-top: 10px;
+  color: rgba(20,16,14,.8);
+  font-size: 18px;
+`;
 
 ExecCard.propTypes = {
   url: PropTypes.string,

@@ -10,12 +10,16 @@ function Exec() {
       <Title>Meet our exec</Title>
       <Grid
         container
-        direction="column"
-        justify="flex-start"
+        direction="row"
+        justifyContent="center"
         alignItems="flex-start"
       >
         {
-          ExecList.exec.map((exec) => <ExecCard url={exec.image} position={exec.position} name={exec.name} content={exec.description} />)
+          ExecList.exec.map((exec) => (
+            <Member item sm={12} md={6} lg={4}>
+              <ExecCard url={exec.image} position={exec.position} name={exec.name} content={exec.description} />
+            </Member>
+          ))
         }
       </Grid>
     </>
@@ -27,6 +31,10 @@ const Title = styled.p`
   margin-top: 10vh;
   font-size: 36px;
   margin-bottom: 2vh;
+`;
+
+const Member = styled(Grid)`
+  padding-bottom: 25px;
 `;
 
 export default Exec;
