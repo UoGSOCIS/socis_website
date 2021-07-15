@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-function ExecCard({
+function Team({
   url, position, name, content,
 }) {
   return (
@@ -24,7 +24,7 @@ const TeamCard = styled.div`
   min-width: 330px;
   border-top-right-radius: 32px;
   border-bottom-left-radius: 32px;
-  box-shadow: 8px 8px 64px 0 rgb(128 130 133 / 10%);
+  box-shadow: 8px 8px 64px 0 rgb(128 130 133 / 25%);
 `;
 
 const TeamImage = styled.img`
@@ -63,7 +63,7 @@ const TeamCardDivider = styled.div`
   width: 48px;
   margin-bottom: 24px;
   height: 2px;
-  background-image: linear-gradient(90deg, #d72d2f, #660000);
+  background-image: linear-gradient(90deg, #990100, #660000);
 `;
 
 const TeamCardContent = styled.p`
@@ -78,15 +78,15 @@ const TeamCardContent = styled.p`
   font-size: 18px;
 `;
 
-ExecCard.propTypes = {
+Team.propTypes = {
   url: PropTypes.string,
   position: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
 };
 
-ExecCard.defaultProps = {
+Team.defaultProps = {
   url: '',
 };
 
-export default ExecCard;
+export default Team;

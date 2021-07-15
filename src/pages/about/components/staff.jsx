@@ -2,7 +2,7 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import styled from 'styled-components';
 import StaffList from './execList';
-import ExecCard from './execCard';
+import Team from './team';
 
 function Staff() {
   return (
@@ -17,7 +17,7 @@ function Staff() {
         {
           StaffList.staff.map((staff) => (
             <Member item sm={12} md={6} lg={4}>
-              <ExecCard url={staff.image} position={staff.position} name={staff.name} content={staff.description} />
+              <Team url={staff.image} position={staff.position} name={staff.name} content={staff.description} />
             </Member>
           ))
         }

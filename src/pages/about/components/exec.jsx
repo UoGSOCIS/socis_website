@@ -2,7 +2,7 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import styled from 'styled-components';
 import ExecList from './execList';
-import ExecCard from './execCard';
+import Team from './team';
 
 function Exec() {
   return (
@@ -17,7 +17,7 @@ function Exec() {
         {
           ExecList.exec.map((exec) => (
             <Member item sm={12} md={6} lg={4}>
-              <ExecCard url={exec.image} position={exec.position} name={exec.name} content={exec.description} />
+              <Team url={exec.image} position={exec.position} name={exec.name} content={exec.description} />
             </Member>
           ))
         }
