@@ -1,12 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import Router from './router';
-import { Footer, NavBar } from './components';
+import { Footer } from './components';
 
 function App() {
   return (
     <Wrapper>
-      <NavBar />
       <Router />
       <Footer />
     </Wrapper>

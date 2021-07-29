@@ -3,11 +3,13 @@ import styled from 'styled-components';
 import {
   Header, WhoWeAre, WhatWeDo, HowToContact,
 } from './components';
+import { NavBar } from '../../components';
 
 function HomePage() {
   return (
     <HomeWrapper>
       <Banner>
+        <NavBar />
         <Header />
       </Banner>
       <HomeSubheaders>
