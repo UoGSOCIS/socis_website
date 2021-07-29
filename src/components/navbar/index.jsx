@@ -3,6 +3,7 @@ import {
   Toolbar, Button, AppBar, Hidden,
 } from '@material-ui/core';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import NavDrawer from './components';
 import logo from '../../assets/socis_logo.png';
 
@@ -13,12 +14,13 @@ const navLinks = [
   { title: 'Contact', path: '/contact' },
 ];
 
-function NavBar() {
+function NavBar({ home }) {
   return (
     <StyledAppBar position="static" style={styles.appBar}>
       <StyledToolbar>
         <a href="/">
-          <Image src={logo} alt="SOCIS Logo" />
+          {!home
+          && <Image src={logo} alt="SOCIS Logo" />}
         </a>
         <WebView smDown>
           <Links>
@@ -74,6 +76,14 @@ const styles = {
   pageLink: {
     height: '100%',
   },
+};
+
+NavBar.defaultProps = {
+  home: false,
+};
+
+NavBar.propTypes = {
+  home: PropTypes.bool,
 };
 
 export default NavBar;

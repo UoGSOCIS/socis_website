@@ -12,7 +12,7 @@ function Header() {
         direction="row"
         justify="center"
         alignItems="center"
-        style={{ height: '90%', width: '100%' }}
+        style={{ height: '95%', width: '100%' }}
       >
         <LogoGrid item lg={4} md={12}>
           <Image src={logo} alt="SOCIS Logo" className="animate__animated animate__fadeIn" />
@@ -38,6 +38,8 @@ const LogoGrid = styled(Grid)`
 
 const Image = styled.img`
   height: 50vh;
+  min-height: 250px;
+  max-height: 600px;
 `;
 
 export default Header;
