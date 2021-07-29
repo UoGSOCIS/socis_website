@@ -9,7 +9,7 @@ function HomePage() {
   return (
     <HomeWrapper>
       <Banner>
-        <NavBar />
+        <NavBar home />
         <Header />
       </Banner>
       <HomeSubheaders>
