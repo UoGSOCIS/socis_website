@@ -18,12 +18,6 @@ function Header() {
         represent the University of Guelph at CS games, a collegiate competition that includes challenges from
         all aspects of computing.
       </Subtext>
-      <Subtext>
-        If you would like to more know, please
-        {' '}
-        <Link href="/contact">reach out</Link>
-        .
-      </Subtext>
     </>
   );
 }
@@ -39,11 +33,6 @@ const Subtext = styled.p`
   font-size: 22px;
   text-align: left;
   marginTop: 0;
-`;
-
-const Link = styled.a`
-  text-decoration: none;
-  color: black;
 `;
 
 export default Header;

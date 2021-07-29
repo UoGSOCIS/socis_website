@@ -1,20 +1,35 @@
 import React from 'react';
+import styled from 'styled-components';
 
 function Footer() {
   return (
-    <div className="footer" style={styles} />
+    <FooterWrapper>
+      <p>
+        SOCIS supports open source! Contribute to this site on
+        {' '}
+        <Link href="https://github.com/SoorajModi/socis_website">GitHub</Link>
+        .
+      </p>
+    </FooterWrapper>
   );
 }
 
-const styles = {
-  background: '#465052',
-  position: 'absolute',
-  paddingTop: '1.0rem',
-  paddingBottom: '1.0rem',
-  bottom: '0',
-  width: '100%',
-  display: 'block',
-  height: '2.5rem',
-};
+const FooterWrapper = styled.div`
+  background: #465052;
+  position: absolute;
+  padding-top: 1.0rem;
+  padding-bottom: 1.0rem;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  height: 2.5rem;
+  text-align: center;
+  color: white;
+`;
+
+const Link = styled.a`
+  color: white;
+  text-decoration: none;
+`;
 
 export default Footer;
