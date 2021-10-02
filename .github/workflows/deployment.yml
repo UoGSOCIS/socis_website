@@ -1,6 +1,9 @@
 name: CI
 
-on: [tag]
+on:
+  push:
+    tags:
+     - v*
 
 jobs:
   docker:
