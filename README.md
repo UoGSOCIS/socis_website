@@ -4,6 +4,8 @@ This is the official website for the Society of Computing and Information Scienc
 
 This project was built using [React](https://reactjs.org/) and bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+
 ## How to run
 
 1. [First fork this repository](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo)
@@ -12,6 +14,12 @@ This project was built using [React](https://reactjs.org/) and bootstrapped with
 4. Run the server locally using `yarn start`. This will open the server on `localhost:8300` in your browser
 5. To run tests enter `yarn test`, this will lanch the test runner in interactive watch mode. Select `a` to run all tests
 6. To run linter enter `yarn lint`, to autofix linter errors, run `yarn lint-fix`
+
+## Build and run using docker
+
+1. Build: `docker build -t socis-web .`
+2. run: `docker run -p 8080:80 socis-web:latest`
+3. go too the url http://localhost:8080 and see the amazing version of the site.
 
 ## Available Scripts
 
