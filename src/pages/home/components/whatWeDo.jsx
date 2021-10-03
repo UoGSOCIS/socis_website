@@ -1,7 +1,7 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import styled from 'styled-components';
-import image from '../../../assets/whatWeDoNoBg.png';
+import image from '../../../assets/whatWeDo.png';
 
 function WhatWeDo() {
   return (
