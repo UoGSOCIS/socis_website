@@ -7,7 +7,7 @@ function Footer() {
       <p>
         SOCIS supports open source! Contribute to this site on
         {' '}
-        <Link href="https://github.com/SoorajModi/socis_website">GitHub</Link>
+        <Link href="https://github.com/UoGSOCIS/socis_website">GitHub</Link>
         .
       </p>
     </FooterWrapper>
