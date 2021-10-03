@@ -26,7 +26,7 @@ function WhoWeAre() {
           </p>
         </Grid>
         <GridImage item md={4} sm={12}>
-          <Image src={image} alt="placeholder" />
+          <Image src={image} alt="teamwork" />
         </GridImage>
       </Grid>
     </Wrapper>
@@ -53,8 +53,8 @@ const Link = styled.a`
 
 const Image = styled.img`
   max-width: 100%;
-  min-width: 20vw;
-  min-height: 20vh;
+  min-width: 25vw;
+  min-height: 25vh;
 `;
 
 export default WhoWeAre;
