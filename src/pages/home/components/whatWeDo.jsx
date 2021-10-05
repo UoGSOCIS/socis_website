@@ -1,7 +1,7 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import styled from 'styled-components';
-import image from '../../../assets/placeholder.png';
+import image from '../../../assets/whatWeDo.png';
 
 function WhatWeDo() {
   return (
@@ -14,7 +14,7 @@ function WhatWeDo() {
         spacing={2}
       >
         <Grid item md={4} sm={12}>
-          <Image src={image} alt="placeholder" />
+          <Image src={image} alt="introduction" />
         </Grid>
         <Grid item md={8} sm={12}>
           <h1>What we do...</h1>
@@ -39,8 +39,8 @@ const Wrapper = styled.div`
 
 const Image = styled.img`
   max-width: 100%;
-  min-width: 20vw;
-  min-height: 20vh;
+  min-width: 25vw;
+  min-height: 25vh;
 `;
 
 export default WhatWeDo;
