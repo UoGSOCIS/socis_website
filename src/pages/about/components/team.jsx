@@ -7,7 +7,7 @@ function Team({
 }) {
   return (
     <TeamCard>
-      <TeamImage src={url} />
+      <TeamImage src={url} alt="Team member image" />
       <TeamCardContentWrapper>
         <TeamCardName>{name}</TeamCardName>
         <TeamCardPosition>{position}</TeamCardPosition>

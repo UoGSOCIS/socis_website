@@ -13,3 +13,7 @@ This is the official website for the Society of Computing and Information Scienc
 - Marshall Asch
 - Zaza Hashmi
 - Danindu Marasinghe
+
+## License
+
+GNU GENERAL PUBLIC LICENSE v3
