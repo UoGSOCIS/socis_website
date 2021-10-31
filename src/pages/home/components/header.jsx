@@ -2,9 +2,11 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import styled from 'styled-components';
 import HeaderMessage from './headerMessage';
-import logo from '../../../assets/socis_logo.png';
+import SOCIS from '../../../assets/socis';
 
 function Header() {
+  const logoHeight = '55vh';
+
   return (
     <Banner>
       <Grid
@@ -15,7 +17,7 @@ function Header() {
         style={{ height: '95%', width: '100%' }}
       >
         <LogoGrid item lg={4} md={12}>
-          <Image src={logo} alt="SOCIS Logo" className="animate__animated animate__fadeIn" />
+          <SOCIS alt="SOCIS Logo" className="animate__animated animate__fadeIn" height={logoHeight} />
         </LogoGrid>
         <Grid item lg={8} md={12}>
           <HeaderMessage />
@@ -34,12 +36,6 @@ const Banner = styled.div`
 
 const LogoGrid = styled(Grid)`
   text-align: center;
-`;
-
-const Image = styled.img`
-  height: 50vh;
-  min-height: 250px;
-  max-height: 600px;
 `;
 
 export default Header;
