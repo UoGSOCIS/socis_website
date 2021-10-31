@@ -6,12 +6,10 @@ function DSC() {
     <>
       <Name>Developer Student Club (DSC)</Name>
       <Bio>
-        This should be a description of the Guelph Coding Community that includes
-        information about the Guelph Coding Community such as what they do, a bit
-        about their history, some of their events, other filler information because I
-        dont want to think about what to write here. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Phasellus tempus congue libero ac tempor. Integer pretium at nunc et
-        vulputate. Pellentesque fringilla sagittis quam.
+        Google Developer Student Clubs (GDSC) are community groups for college and university students interested in
+        Google developer technologies. Students from all undergraduate or graduate programs with an interest in growing
+        as a developer are welcome. By joining a GDSC, students grow their knowledge in a peer-to-peer learning
+        environment and build solutions for local businesses and their community.
       </Bio>
       <div style={{ textAlign: 'center' }}>
         <Link href="https://www.instagram.com/dsc_uofg" target="_blank" rel="noreferrer">Instagram</Link>
