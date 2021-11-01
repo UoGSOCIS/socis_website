@@ -5,7 +5,7 @@ import HeaderMessage from './headerMessage';
 import SOCIS from '../../../assets/socis';
 
 function Header() {
-  const logoHeight = '55vh';
+  const logoHeight = '50vh';
 
   return (
     <Banner>
@@ -30,8 +30,7 @@ function Header() {
 const Banner = styled.div`
   background-color: #660000;
   height: 100%;
-  padding-left: 3vw;
-  padding-right: 3vw;
+  padding-right: 2vw;
 `;
 
 const LogoGrid = styled(Grid)`
