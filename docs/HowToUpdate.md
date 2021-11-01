@@ -1,6 +1,6 @@
 # How to Update
 
-This document outlines how to update parts of the website. See `Contributing.md` to see how to contribute to the repo. 
+This document outlines how to update parts of the website. See [Contributing](https://github.com/UoGSOCIS/socis_website/blob/main/docs/Contributing.md) to see how to contribute to the repo. 
 
 ## Exec/staff list
 
@@ -30,6 +30,8 @@ Open `execList.js`, find the individual and either comment them out or delete th
 `src/pages/about/assets`.
 
 ## Policy documents
+
+The original policy documents can be found on the SOCIS google drive.
 
 ### Updating
 
