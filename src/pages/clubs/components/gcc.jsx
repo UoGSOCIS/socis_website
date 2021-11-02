@@ -10,10 +10,10 @@ function GCC() {
         providing students with valuable, hands-on, extracurricular tech skills which cannot normally be acquired
         through coursework.
 
-        Founded in 2013, GCC facilitates student-run workshops, tutorials, demos, and presentations for students of all
-        backgrounds and skill-levels. GCC workshops are designed by passionate students and guest speakers to teach all
-        manner of new skills. We believe that we learn best from our peers, and want experienced students to help expand
-        the skillsets of Guelph Coders.
+        Founded in 2013, GCC facilitates student-run workshops, tutorials, demos, networking sessions, social nights,
+        and presentations for students of all backgrounds and skill-levels. GCC workshops are designed by passionate
+        students and guest speakers to teach all manner of new skills. We believe that we learn best from our peers, and
+        want experienced students to help expand the skillsets of Guelph Coders.
       </Bio>
       <div style={{ textAlign: 'center' }}>
         <Link href="https://www.instagram.com/gcc_uog" target="_blank" rel="noreferrer">Instagram</Link>
