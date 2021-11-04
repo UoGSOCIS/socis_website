@@ -10,16 +10,16 @@ In return, we will reciprocate that respect by addressing your issue, assessing 
 
 ## Quicklinks
 
-* [Code of Conduct](#code-of-conduct)
-* [Getting Started](#getting-started)
-    * [Issues](#issues)
-    * [Pull Requests](#pull-requests)
-* [Getting Help](#getting-help)
+* [Code of Conduct](https://github.com/UoGSOCIS/socis_website/blob/main/CODE_OF_CONDUCT.md)
+* [README](https://github.com/UoGSOCIS/socis_website/blob/main/README.md)
+    * [Issues](https://github.com/UoGSOCIS/socis_website/issues)
+    * [Pull Requests](https://github.com/UoGSOCIS/socis_website/pulls)
+* [Getting Help](https://github.com/UoGSOCIS/socis_website/wiki/Getting-Help)
 
 ## Code of Conduct
 
 We take our open source community seriously and hold ourselves and other contributors to high standards of communication. 
-By participating and contributing to this project, you agree to uphold our [Code of Conduct](https://github.com/UoGSOCIS/socis_website/blob/main/docs/CodeOfConduct.md).
+By participating and contributing to this project, you agree to uphold our [Code of Conduct](https://github.com/UoGSOCIS/socis_website/blob/main/CODE_OF_CONDUCT.md).
 
 ## Getting Started
 

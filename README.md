@@ -6,6 +6,24 @@
 
 This is the official website for the Society of Computing and Information Sciences (SOCIS) at the University of Guelph.
 
+## How to run
+
+Download dependencies
+
+```bash
+yarn install
+```
+
+Run locally
+
+```bash
+yarn start
+``` 
+
+This will start the application on `http://localhost:3000/`.
+
+For more extensive instructions, please refer to the [Wiki](https://github.com/UoGSOCIS/socis_website/wiki/How-to-Run).
+
 ## Contributors
 
 - Sooraj Modi
