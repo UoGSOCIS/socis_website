@@ -4,9 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import GCC from './gcc';
 import GWICS from './gwics';
 import DSC from './dsc';
-import GCCLogo from '../assets/gccLogo';
-import GWICSLogo from '../assets/gwicsLogo';
-import DSCLogo from '../assets/dscLogo';
+import { GCCLogo, DSCLogo, GWICSLogo } from '../assets';
 
 function Clubs() {
   return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function SOCIS({ width, height, viewbox }) {
+function SOCISLogo({ width, height, viewbox }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -25,16 +25,16 @@ function SOCIS({ width, height, viewbox }) {
   );
 }
 
-SOCIS.propTypes = {
+SOCISLogo.propTypes = {
   width: PropTypes.string,
   height: PropTypes.string,
   viewbox: PropTypes.string,
 };
 
-SOCIS.defaultProps = {
+SOCISLogo.defaultProps = {
   width: '679.467',
   height: '755.594',
   viewbox: '0 0 179.776 199.918',
 };
 
-export default SOCIS;
+export default SOCISLogo;

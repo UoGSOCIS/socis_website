@@ -5,7 +5,7 @@ import {
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import NavDrawer from './components';
-import SOCIS from '../../assets/socis';
+import SOCISLogo from '../../assets/socisLogo';
 
 const navLinks = [
   { title: 'Clubs', path: '/clubs' },
@@ -20,7 +20,7 @@ function NavBar({ home }) {
       <StyledToolbar>
         <a href="/">
           {!home
-          && <SOCIS alt="SOCIS Logo" width="50" height="4rem" />}
+          && <SOCISLogo alt="SOCIS Logo" width="50" height="4rem" />}
         </a>
         <WebView smDown>
           <Links>

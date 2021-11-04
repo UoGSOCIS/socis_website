@@ -1,6 +1,6 @@
 import React from 'react';
 
-function GccLogo() {
+function GCCLogo() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -71,4 +71,4 @@ function GccLogo() {
   );
 }
 
-export default GccLogo;
+export default GCCLogo;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function GwicsLogo() {
+function GWICSLogo() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -25,4 +25,4 @@ function GwicsLogo() {
   );
 }
 
-export default GwicsLogo;
+export default GWICSLogo;
