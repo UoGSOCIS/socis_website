@@ -6,12 +6,14 @@ function GCC() {
     <>
       <Name>Guelph Coding Community (GCC)</Name>
       <Bio>
-        This should be a description of the Guelph Coding Community that includes
-        information about the Guelph Coding Community such as what they do, a bit
-        about their history, some of their events, other filler information because I
-        dont want to think about what to write here. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Phasellus tempus congue libero ac tempor. Integer pretium at nunc et
-        vulputate. Pellentesque fringilla sagittis quam.
+        The Guelph Coding Community (GCC) is a School of Computer Science Student Organization (SOCSSO) focused on
+        providing students with valuable, hands-on, extracurricular tech skills which cannot normally be acquired
+        through coursework.
+
+        Founded in 2013, GCC facilitates student-run workshops, tutorials, demos, networking sessions, social nights,
+        and presentations for students of all backgrounds and skill-levels. GCC workshops are designed by passionate
+        students and guest speakers to teach all manner of new skills. We believe that we learn best from our peers, and
+        want experienced students to help expand the skillsets of Guelph Coders.
       </Bio>
       <div style={{ textAlign: 'center' }}>
         <Link href="https://www.instagram.com/gcc_uog" target="_blank" rel="noreferrer">Instagram</Link>

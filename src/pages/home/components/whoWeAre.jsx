@@ -14,8 +14,8 @@ function WhoWeAre() {
         spacing={2}
       >
         <Grid item md={8} sm={12}>
-          <h1>Who we are...</h1>
-          <p>
+          <Subheader>Who we are...</Subheader>
+          <Subtext>
             We are the official student society for the
             {' '}
             <Link href="/" target="_blank">School of Computer Science</Link>
@@ -23,7 +23,7 @@ function WhoWeAre() {
             students at the
             {' '}
             <Link href="/" target="_blank">University of Guelph.</Link>
-          </p>
+          </Subtext>
         </Grid>
         <GridImage item md={4} sm={12}>
           <Image src={image} alt="teamwork" />
@@ -55,6 +55,14 @@ const Image = styled.img`
   max-width: 100%;
   min-width: 25vw;
   min-height: 25vh;
+`;
+
+const Subheader = styled.h1`
+  font-size: 56px;
+`;
+
+const Subtext = styled.p`
+  font-size: 24px;
 `;
 
 export default WhoWeAre;

@@ -17,11 +17,11 @@ function WhatWeDo() {
           <Image src={image} alt="introduction" />
         </Grid>
         <Grid item md={8} sm={12}>
-          <h1>What we do...</h1>
-          <p>
+          <Subheader>What we do...</Subheader>
+          <Subtext>
             SOCIS focuses on community building, creating opportunities for students, and advocating for students interests.
             We also run events, organize hackathons, administer clubs, and represent School of Computer Science students.
-          </p>
+          </Subtext>
         </Grid>
       </Grid>
     </Wrapper>
@@ -41,6 +41,14 @@ const Image = styled.img`
   max-width: 100%;
   min-width: 25vw;
   min-height: 25vh;
+`;
+
+const Subheader = styled.h1`
+  font-size: 56px;
+`;
+
+const Subtext = styled.p`
+  font-size: 24px;
 `;
 
 export default WhatWeDo;

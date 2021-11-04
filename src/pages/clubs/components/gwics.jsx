@@ -6,12 +6,10 @@ function GWICS() {
     <>
       <Name>Guelph Women in Computer Science (GWICS)</Name>
       <Bio>
-        This should be a description of the Guelph Coding Community that includes
-        information about the Guelph Coding Community such as what they do, a bit
-        about their history, some of their events, other filler information because I
-        dont want to think about what to write here. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Phasellus tempus congue libero ac tempor. Integer pretium at nunc et
-        vulputate. Pellentesque fringilla sagittis quam.
+        Founded in 2018, Guelph Women in Computer Science (GWiCS) is a student-run organization that seeks to build a
+        supportive community for women studying computer science, software engineering and related computing degrees at
+        the University of Guelph. This includes cis and trans women as well as non-binary individuals. GWiCS hopes to
+        support the inclusion and retention of these groups in our community!
       </Bio>
       <div style={{ textAlign: 'center' }}>
         <Link href="https://gwics.org/" target="_blank" rel="noreferrer">Website</Link>
