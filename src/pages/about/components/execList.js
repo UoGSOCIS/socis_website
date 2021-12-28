@@ -1,9 +1,10 @@
 import President from '../assets/president.jpeg';
-import VPInternal from '../assets/vp-internal.jpeg';
+import VPInternal from '../assets/vp-internal.png';
 import VPExternal from '../assets/vp-external.png';
-import VPSocial from '../assets/vp-social.jpeg';
+// import VPSocial from '../assets/vp-social.jpeg';
 import VPFinance from '../assets/vp-finance.jpeg';
 import VPCommunication from '../assets/vp-communication.png';
+import FirstYearRep from '../assets/first-year-rep.jpeg';
 import SecondYearRep from '../assets/second-year-rep.jpeg';
 import ThirdYearRep from '../assets/third-year-rep.jpeg';
 import FourthYearRep from '../assets/fourth-year-rep.jpeg';
@@ -19,9 +20,9 @@ export default {
     },
     {
       position: 'Vice President Internal',
-      name: 'Leen Fadi Al-Jallad',
+      name: 'Or Brener',
       image: VPInternal,
-      description: 'My name is Leen Fadi Al-Jallad and I am second year Software Engineering student who is committed as a Vice President Internal in SOCIS at the University of Guelph. My role consists of assisting the President on administrative tasks, directing and leading internal committees, acting as a liaison between other student organizations, assuming the President’s responsibilities in the event of unavailability, etc. I am aiming to act as an outstanding representative to the BComp Program Committee and to reach the goals that will assist the students to succeed in the field of study.\n',
+      description: 'Hi my name is Or Brener, I am the VP-Internal at SOCIS, I am studying Software Engineering Co-op with a minor in Discrete Mathematics, and I a professional pianist and chef :)',
     },
     {
       position: 'Vice President External',
@@ -29,12 +30,12 @@ export default {
       image: VPExternal,
       description: 'Heyo, call me Ritz! I\'m the VP External for SOCIS, Director of Challenges for GCC, and the Co-Founder and Co-Chair of GryphHacks! I\'m a Bubble Tea and Lazeez enthusiast, can solve a Rubiks cube in under a minute, and for some frightening reason, I know the first 52 digits of PI! Say hi if you see me, either on campus, a discord server, or Minecraft!\n',
     },
-    {
-      position: 'Vice President Social',
-      name: 'Usama Riaz',
-      image: VPSocial,
-      description: 'Hey, my name Usama Riaz. I am the VP Social and responsible for organising events for all the CS Students! I am in my 2nd year of Bachelor of Computing. I am very passionate about doing events and providing environments for students to come together, learn from eachother and have a great time!',
-    },
+    // {
+    //   position: 'Vice President Social',
+    //   name: 'Usama Riaz',
+    //   image: VPSocial,
+    //   description: 'Hey, my name Usama Riaz. I am the VP Social and responsible for organising events for all the CS Students! I am in my 2nd year of Bachelor of Computing. I am very passionate about doing events and providing environments for students to come together, learn from eachother and have a great time!',
+    // },
     {
       position: 'Vice President Finance',
       name: 'Zaza Hashmi',
@@ -56,10 +57,16 @@ export default {
   ],
   staff: [
     {
+      position: 'First Year Representative',
+      name: 'Mansoor Syed',
+      image: FirstYearRep,
+      description: 'Hey everyone! I\'m Mansoor, and I am the first year rep for SOCIS. I am currently a first year student in the Software Engineering Co-op program. A little fact about me, I enjoy music production with FL Studio where I usually make rap or chill lo-fi hip hop beats!',
+    },
+    {
       position: 'Second Year Representative',
       name: 'Trisha Khanna',
       image: SecondYearRep,
-      description: 'My name is Trisha and I\'m a second year student in the Computer Science Co-op program at UofG. As SOCIS\'s Second Year Rep, my role involves representing my peers by coming up with skill improvement and career development ideas with our SOCIS Executive Team. Off-duty, you can find me watching a med show or reading a book in the fantasy genre :slightly_smiling_face:\n',
+      description: 'My name is Trisha and I\'m a second year student in the Computer Science Co-op program at UofG. As SOCIS\'s Second Year Rep, my role involves representing my peers by coming up with skill improvement and career development ideas with our SOCIS Executive Team. Off-duty, you can find me watching a med show or reading a book in the fantasy genre\n',
     },
     {
       position: 'Third Year Representative',
@@ -71,7 +78,7 @@ export default {
       position: 'Fourth Year Representative',
       name: 'Habiba Mostafa',
       image: FourthYearRep,
-      description: 'My name is Trisha and I\'m a second year student in the Computer Science Co-op program at UofG. As SOCIS\'s Second Year Rep, my role involves representing my peers by coming up with skill improvement and career development ideas with our SOCIS Executive Team. Off-duty, you can find me watching a med show or reading a book in the fantasy genre :slightly_smiling_face:\n',
+      description: 'Hi all! I’m Habiba, a rising Software Engineering Co-op senior here at UofG. I’m passionate about introducing more people to the world of tech, and voicing your needs and opinions at SOCIS. I’m also a huge women in tech advocate and I aspire to bring more diversity and inclusion to SOCIS this year.',
     },
     {
       position: 'Merchandise Coordinator',
