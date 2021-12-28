@@ -1,42 +1,32 @@
 import React from 'react';
+import styled from 'styled-components';
 import SocialMedia from './components/socialMedia';
-import { NavBar } from '../../components';
+import { NavBar, ContentWrapper, SubpageText, SubpageTitle } from '../../components';
 
 function ContactPage() {
   return (
     <>
       <NavBar />
-      <div className="contact-main" style={styles.main}>
-        <h1 style={styles.header}>Contact SOCIS</h1>
-        <p style={styles.description}>
+      <ContentWrapper>
+        <SubpageTitle>Contact SOCIS</SubpageTitle>
+        <SubpageText>
           We would love to hear your comments, questions, suggestions, or feedback! Please email us at
           {' '}
-          <a href="mailto:exec@socis.ca" style={styles.link}>exec@socis.ca</a>
+          <SubtextLink href="mailto:exec@socis.ca">exec@socis.ca</SubtextLink>
           .
-        </p>
+        </SubpageText>
         <SocialMedia />
-      </div>
+      </ContentWrapper>
     </>
   );
 }
 
-const styles = {
-  main: {
-    paddingBottom: '15vh',
-  },
-  header: {
-    textAlign: 'center',
-    marginTop: '10vh',
-    fontSize: '54px',
-  },
-  description: {
-    textAlign: 'center',
-    fontSize: '22px',
-  },
-  link: {
-    color: 'black',
-    textDecoration: 'none',
-  },
-};
+const SubtextLink = styled.a`
+  color: black;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+`;
 
 export default ContactPage;

@@ -1,25 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
+import { SubpageTitle, SubpageText } from '../../../components';
 
 function Header() {
   return (
     <>
-      <Title>Official Documents and Policies</Title>
+      <PolicyTitle>Official Documents and Policies</PolicyTitle>
       <Subtext>Last updated May 28, 2021</Subtext>
     </>
   );
 }
 
-const Title = styled.p`
-  text-align: center;
-  margin-top: 10vh;
-  font-size: 54px;
+const PolicyTitle = styled(SubpageTitle)`
   margin-bottom: 0;
 `;
 
-const Subtext = styled.p`
-  font-size: 22px;
-  text-align: center;
+const Subtext = styled(SubpageText)`
   font-style: italic;
   marginTop: 0;
 `;
