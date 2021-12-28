@@ -23,10 +23,9 @@ function Header() {
 }
 
 const Title = styled.p`
-  text-align: left;
+  text-align: center;
   margin-top: 10vh;
   font-size: 54px;
-  margin-bottom: 0;
 `;
 
 const Subtext = styled.p`

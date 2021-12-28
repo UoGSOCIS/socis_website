@@ -30,11 +30,11 @@ const Title = styled.p`
   text-align: left;
   margin-top: 10vh;
   font-size: 36px;
-  margin-bottom: 2vh;
+  margin-bottom: 4vh;
 `;
 
 const Member = styled(Grid)`
-  padding-bottom: 25px;
+  padding-bottom: 4vh;
 `;
 
 export default Exec;
