@@ -9,11 +9,7 @@ function SubpageRouter() {
   return (
     <>
       <NavBar />
-      <Route exact path="/clubs" component={ClubPage} />
-      <Route exact path="/policy" component={PolicyPage} />
-      <Route exact path="/about" component={AboutPage} />
-      <Route exact path="/contact" component={ContactPage} />
-      <Route component={NotFoundPage} />
+
     </>
   );
 }
