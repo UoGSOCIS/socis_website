@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import { SubpageTitle, SubpageText } from '../../../components';
 
 function Header() {
   return (
     <>
-      <Title>About Us</Title>
+      <SubpageTitle>About Us</SubpageTitle>
       <Subtext>
         The Society of Computing and Information Science (SOCIS) is here to represent all School of Computer
         Science (SOCS) students, this includes those enrolled in computer science, software engineering, the
@@ -22,14 +23,7 @@ function Header() {
   );
 }
 
-const Title = styled.p`
-  text-align: center;
-  margin-top: 10vh;
-  font-size: 54px;
-`;
-
-const Subtext = styled.p`
-  font-size: 22px;
+const Subtext = styled(SubpageText)`
   text-align: left;
   marginTop: 0;
 `;

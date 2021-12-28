@@ -2,6 +2,7 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import styled from 'styled-components';
 import image from '../../../assets/whatWeDo.png';
+import { SubpageText, SubpageTitle } from '../../../components';
 
 function WhatWeDo() {
   return (
@@ -43,12 +44,14 @@ const Image = styled.img`
   min-height: 25vh;
 `;
 
-const Subheader = styled.h1`
+const Subheader = styled(SubpageTitle)`
   font-size: 56px;
+  text-align: left;
 `;
 
-const Subtext = styled.p`
+const Subtext = styled(SubpageText)`
   font-size: 24px;
+  text-align: left;
 `;
 
 export default WhatWeDo;

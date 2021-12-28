@@ -1,33 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
 import SocialMedia from './components/socialMedia';
-import { ContentWrapper } from '../../components';
+import { ContentWrapper, SubpageText, SubpageTitle } from '../../components';
 
 function ContactPage() {
   return (
     <ContentWrapper>
-      <Title>Contact SOCIS</Title>
-      <Subtext>
+      <SubpageTitle>Contact SOCIS</SubpageTitle>
+      <SubpageText>
         We would love to hear your comments, questions, suggestions, or feedback! Please email us at
         {' '}
         <SubtextLink href="mailto:exec@socis.ca">exec@socis.ca</SubtextLink>
         .
-      </Subtext>
+      </SubpageText>
       <SocialMedia />
     </ContentWrapper>
   );
 }
-
-const Title = styled.p`
-  text-align: center;
-  margin-top: 10vh;
-  font-size: 54px;
-`;
-
-const Subtext = styled.p`
-  font-size: 22px;
-  text-align: center;
-`;
 
 const SubtextLink = styled.a`
   color: black;

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { SubpageText } from '../../../components';
 
 function Meeting() {
   return (
@@ -27,8 +28,7 @@ const Title = styled.p`
   margin-bottom: 0;
 `;
 
-const Subtext = styled.p`
-  font-size: 22px;
+const Subtext = styled(SubpageText)`
   text-align: left;
   marginTop: 0;
 `;
