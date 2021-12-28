@@ -6,7 +6,7 @@ import SOCISLogo from '../../../assets/socisLogo';
 import { useViewport } from '../../../components';
 
 function Header() {
-  const breakpoint = 676;
+  const breakpoint = 676; // Mobile view breakpoint
   const logoHeight = '50vh';
   let logoWidth = useState('679.467');
   const { width } = useViewport();
