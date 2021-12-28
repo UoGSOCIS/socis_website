@@ -21,12 +21,11 @@ function Header() {
 
   return (
     <Banner>
-      <Grid
+      <BannerGrid
         container
         direction="row"
         justify="center"
         alignItems="center"
-        style={{ height: '95%', width: '100%' }}
       >
         <LogoGrid item lg={4} md={12}>
           <SOCISLogo alt="SOCIS Logo" className="animate__animated animate__fadeIn" height={logoHeight} width={logoWidth} />
@@ -34,7 +33,7 @@ function Header() {
         <Grid item lg={8} md={12}>
           <HeaderMessage />
         </Grid>
-      </Grid>
+      </BannerGrid>
     </Banner>
   );
 }
@@ -43,6 +42,11 @@ const Banner = styled.div`
   background-color: #660000;
   height: 100%;
   padding-right: 2vw;
+`;
+
+const BannerGrid = styled(Grid)`
+  height: 95%;
+  width: 100%;
 `;
 
 const LogoGrid = styled(Grid)`
