@@ -4,7 +4,7 @@ import styled from 'styled-components';
 function Header() {
   return (
     <>
-      <Title>We are the Society of Computing and Information Sciences</Title>
+      <Title>About Us</Title>
       <Subtext>
         The Society of Computing and Information Science (SOCIS) is here to represent all School of Computer
         Science (SOCS) students, this includes those enrolled in computer science, software engineering, the
