@@ -1,7 +1,9 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import styled from 'styled-components';
-import { NavBar, ReturnHomeBtn, SubpageText, SubpageTitle } from '../../components';
+import {
+  NavBar, ReturnHomeBtn, SubpageText, SubpageTitle,
+} from '../../components';
 
 function NotFoundPage() {
   return (
@@ -14,8 +16,8 @@ function NotFoundPage() {
         alignItems="center"
         justify="center"
       >
-      <SubpageTitle>404 not found</SubpageTitle>
-      <SubpageText>Looks like you took a wrong turn :(</SubpageText>
+        <SubpageTitle>404 not found</SubpageTitle>
+        <SubpageText>Looks like you took a wrong turn :(</SubpageText>
         <ReturnHomeBtn />
       </StyledGrid>
     </>
@@ -24,10 +26,6 @@ function NotFoundPage() {
 
 const StyledGrid = styled(Grid)`
   height: 70vh;
-`;
-
-const Header = styled.h1`
-  margin-bottom: 0;
 `;
 
 export default NotFoundPage;

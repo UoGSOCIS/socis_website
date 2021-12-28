@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 import SocialMedia from './components/socialMedia';
-import { NavBar, ContentWrapper, SubpageText, SubpageTitle } from '../../components';
+import {
+  NavBar, ContentWrapper, SubpageText, SubpageTitle,
+} from '../../components';
 
 function ContactPage() {
   return (
