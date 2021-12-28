@@ -1,31 +1,30 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
+import styled from 'styled-components';
 import { ReturnHomeBtn } from '../../components';
 
 function NotFoundPage() {
   return (
-    <Grid
+    <StyledGrid
       container
       spacing={0}
       direction="column"
       alignItems="center"
       justify="center"
-      style={styles.grid}
     >
-      <h1 style={styles.header}>404 not found</h1>
+      <Header>404 not found</Header>
       <p>Looks like you took a wrong turn :(</p>
       <ReturnHomeBtn />
-    </Grid>
+    </StyledGrid>
   );
 }
 
-const styles = {
-  grid: {
-    height: '70vh',
-  },
-  header: {
-    marginBottom: '0',
-  },
-};
+const StyledGrid = styled(Grid)`
+  height: 70vh;
+`;
+
+const Header = styled.h1`
+  margin-bottom: 0;
+`;
 
 export default NotFoundPage;
