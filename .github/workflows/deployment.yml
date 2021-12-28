@@ -13,6 +13,9 @@ jobs:
     outputs:
       container_digest: ${{ steps.docker_build.outputs.digest }}
     steps:
+      - name: Setup the current date
+        id: prep
+        run: echo "::set-output name=date::$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
       - name: Docker meta
         id: meta
         uses: docker/metadata-action@v3
@@ -35,6 +38,9 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+          build-args: |
+            BUILD_DATE=${{ steps.date.outputs.date }}
+            VCS_REF=${{ github.sha }}
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
