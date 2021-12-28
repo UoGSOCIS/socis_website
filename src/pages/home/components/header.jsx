@@ -1,11 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Grid from '@material-ui/core/Grid';
 import styled from 'styled-components';
 import HeaderMessage from './headerMessage';
 import SOCISLogo from '../../../assets/socisLogo';
+import { useViewport } from '../../../components';
 
 function Header() {
+  const breakpoint = 676;
   const logoHeight = '50vh';
+  let logoWidth = useState('679.467');
+  const { width } = useViewport();
+
+  useEffect(() => {
+    if (width < breakpoint) {
+      logoWidth = width;
+    } else {
+      logoWidth = '679.467';
+    }
+  }, [width]);
 
   return (
     <Banner>
@@ -17,7 +29,7 @@ function Header() {
         style={{ height: '95%', width: '100%' }}
       >
         <LogoGrid item lg={4} md={12}>
-          <SOCISLogo alt="SOCIS Logo" className="animate__animated animate__fadeIn" height={logoHeight} />
+          <SOCISLogo alt="SOCIS Logo" className="animate__animated animate__fadeIn" height={logoHeight} width={logoWidth} />
         </LogoGrid>
         <Grid item lg={8} md={12}>
           <HeaderMessage />
