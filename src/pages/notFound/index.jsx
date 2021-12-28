@@ -1,6 +1,6 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
-import { ReturnHomeBtn } from '../../components';
+import { ReturnHomeBtn, SubpageText, SubpageTitle } from '../../components';
 
 function NotFoundPage() {
   return (
@@ -12,8 +12,8 @@ function NotFoundPage() {
       justify="center"
       style={styles.grid}
     >
-      <h1 style={styles.header}>404 not found</h1>
-      <p>Looks like you took a wrong turn :(</p>
+      <SubpageTitle>404 not found</SubpageTitle>
+      <SubpageText>Looks like you took a wrong turn :(</SubpageText>
       <ReturnHomeBtn />
     </Grid>
   );
