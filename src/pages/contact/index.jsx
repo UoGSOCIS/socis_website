@@ -1,20 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
 import SocialMedia from './components/socialMedia';
-import { ContentWrapper, SubpageText, SubpageTitle } from '../../components';
+import {
+  NavBar, ContentWrapper, SubpageText, SubpageTitle,
+} from '../../components';
 
 function ContactPage() {
   return (
-    <ContentWrapper>
-      <SubpageTitle>Contact SOCIS</SubpageTitle>
-      <SubpageText>
-        We would love to hear your comments, questions, suggestions, or feedback! Please email us at
-        {' '}
-        <SubtextLink href="mailto:exec@socis.ca">exec@socis.ca</SubtextLink>
-        .
-      </SubpageText>
-      <SocialMedia />
-    </ContentWrapper>
+    <>
+      <NavBar />
+      <ContentWrapper>
+        <SubpageTitle>Contact SOCIS</SubpageTitle>
+        <SubpageText>
+          We would love to hear your comments, questions, suggestions, or feedback! Please email us at
+          {' '}
+          <SubtextLink href="mailto:exec@socis.ca">exec@socis.ca</SubtextLink>
+          .
+        </SubpageText>
+        <SocialMedia />
+      </ContentWrapper>
+    </>
   );
 }
 
