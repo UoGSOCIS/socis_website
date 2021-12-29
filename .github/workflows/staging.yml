@@ -1,9 +1,8 @@
 name: Staging
 
 on:
-  push:
-    pull_request_review:
-      types: [submitted, edited]
+  pull_request_review:
+    types: [submitted, edited]
 
 jobs:
   docker:
