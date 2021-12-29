@@ -52,4 +52,4 @@ jobs:
         env:
           KUBE_CONFIG: ${{ secrets.KUBE_CONFIG }}
         with:
-          args: set image deployment/site website=marshallasch/socis@${{ needs.docker.outputs.container_digest }} --namespace "socis-website"
+          args: set image deployment/production website=marshallasch/socis@${{ needs.docker.outputs.container_digest }} --namespace "socis-website"
