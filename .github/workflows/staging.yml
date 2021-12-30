@@ -1,8 +1,8 @@
 name: Staging
 
 on:
-  pull_request_review:
-    types: [submitted, edited]
+  pull_request:
+    types: [opened, synchronize, ready_for_review, review_requested]
 
 jobs:
   docker:
