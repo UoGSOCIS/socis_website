@@ -4,7 +4,10 @@ import Grid from '@material-ui/core/Grid';
 import GCC from './gcc';
 import GWICS from './gwics';
 import DSC from './dsc';
-import { GCCLogo, DSCLogo, GWICSLogo } from '../assets';
+import Makerspace from './makerspace';
+import {
+  GCCLogo, DSCLogo, GWICSLogo, MakerspaceLogo,
+} from '../assets';
 
 function Clubs() {
   return (
@@ -35,6 +38,14 @@ function Clubs() {
       <Grid item md={8} sm={12}>
         <DSC />
       </Grid>
+
+      <LogoGrid item md={4} sm={12}>
+        <MakerspaceLogo alt="Developer Student Club Logo" />
+      </LogoGrid>
+      <Grid item md={8} sm={12}>
+        <Makerspace />
+      </Grid>
+
     </Grid>
   );
 }
