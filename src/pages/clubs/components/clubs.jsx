@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Grid from '@material-ui/core/Grid';
+import Grid from '@mui/material/Grid';
 import GCC from './gcc';
 import GWICS from './gwics';
 import DSC from './dsc';
@@ -14,7 +14,7 @@ function Clubs() {
     <Grid
       container
       direction="row"
-      justify="center"
+      justifyContent="center"
       alignItems="center"
       spacing={2}
     >

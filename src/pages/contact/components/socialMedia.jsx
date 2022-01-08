@@ -1,9 +1,9 @@
 import React from 'react';
-import Grid from '@material-ui/core/Grid';
+import Grid from '@mui/material/Grid';
 import {
   faDiscord, faFacebook, faInstagram, faLinkedin, faSlack, faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
-import Container from '@material-ui/core/Container';
+import Container from '@mui/material/Container';
 import styled from 'styled-components';
 import { FontAwesomeLink } from '../../../components/icons';
 
@@ -14,7 +14,7 @@ function SocialMedia() {
       <Grid
         container
         direction="row"
-        justify="space-evenly"
+        justifyContent="space-evenly"
         alignItems="center"
         spacing={2}
       >

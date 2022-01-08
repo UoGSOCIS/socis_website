@@ -1,5 +1,5 @@
 import React from 'react';
-import Grid from '@material-ui/core/Grid';
+import Grid from '@mui/material/Grid';
 import styled from 'styled-components';
 import image from '../../../assets/whoWeAre.png';
 import { SubpageText, SubpageTitle } from '../../../components';
@@ -10,7 +10,7 @@ function WhoWeAre() {
       <Grid
         container
         direction="row"
-        justify="center"
+        justifyContent="center"
         alignItems="center"
         spacing={2}
       >
