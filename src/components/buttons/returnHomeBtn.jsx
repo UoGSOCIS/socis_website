@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '@material-ui/core';
+import { Button } from '@mui/material';
 
 function ReturnHomeBtn() {
   return <Button variant="contained" color="primary" href="/" style={style}>Return Home</Button>;

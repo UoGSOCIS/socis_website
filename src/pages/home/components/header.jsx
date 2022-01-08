@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Grid from '@material-ui/core/Grid';
+import Grid from '@mui/material/Grid';
 import styled from 'styled-components';
 import HeaderMessage from './headerMessage';
 import SOCISLogo from '../../../assets/socisLogo';

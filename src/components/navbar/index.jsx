@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   Toolbar, Button, AppBar, Hidden,
-} from '@material-ui/core';
+} from '@mui/material';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import NavDrawer from './components';

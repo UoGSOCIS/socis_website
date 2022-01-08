@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import {
   List, ListItem, ListItemText, IconButton, SwipeableDrawer,
-} from '@material-ui/core';
-import { Menu } from '@material-ui/icons';
+} from '@mui/material';
+import { Menu } from '@mui/icons-material';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
@@ -34,6 +34,7 @@ function NavDrawer({ navLinks }) {
         edge="end"
         color="inherit"
         onClick={toggleDrawer(true)}
+        size="large"
       >
         <Menu color="inherit" />
       </IconButton>
