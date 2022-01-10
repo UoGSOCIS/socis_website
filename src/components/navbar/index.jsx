@@ -17,7 +17,7 @@ const navLinks = [
 function NavBar({ home }) {
   return (
     <StyledAppBar position="static" style={styles.appBar}>
-      <StyledToolbar>
+      <StyledToolbar style={{ paddingLeft: 10 }}>
         <a href="/">
           {!home
           && <SOCISLogo alt="SOCIS Logo" width="50" height="4rem" />}
@@ -25,7 +25,7 @@ function NavBar({ home }) {
         <WebView smDown>
           <Links>
             {navLinks.map(({ title, path }) => (
-              <Button key={title} color="inherit" href={path} style={styles.pageLink}>{title}</Button>
+              <PageLink key={title} color="inherit" href={path}>{title}</PageLink>
             ))}
           </Links>
         </WebView>
@@ -44,7 +44,8 @@ const StyledAppBar = styled(AppBar)`
 const StyledToolbar = styled(Toolbar)`
   width: 100%;
   flex-direction: row;
-  justify-content: space-between
+  justify-content: space-between;
+  padding-left: 0;
 `;
 
 const Links = styled.div``;
@@ -54,6 +55,10 @@ const WebView = styled(Hidden)`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+`;
+
+const PageLink = styled(Button)`
+  height: 100%;
 `;
 
 const MobileView = styled(Hidden)``;
@@ -67,9 +72,6 @@ const styles = {
     backgroundColor: '#660000',
     flexDirection: 'row',
     width: '100%',
-  },
-  pageLink: {
-    height: '100%',
   },
 };
 

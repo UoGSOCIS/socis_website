@@ -1,7 +1,7 @@
 import React from 'react';
 import { ContentWrapper, NavBar } from '../../components';
 import {
-  Header, Meeting, Exec, Staff,
+  Header, Exec, Staff,
 } from './components';
 
 function AboutPage() {
@@ -10,7 +10,7 @@ function AboutPage() {
       <NavBar />
       <ContentWrapper>
         <Header />
-        <Meeting />
+        {/* <Meeting /> */}
         <Exec />
         <Staff />
       </ContentWrapper>
