@@ -7,7 +7,7 @@ import Team from './team';
 function Exec() {
   return (
     <>
-      <Title>Meet our exec</Title>
+      <Title>Meet our executives</Title>
       <Grid
         container
         direction="row"
