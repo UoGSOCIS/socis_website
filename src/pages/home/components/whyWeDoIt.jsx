@@ -1,10 +1,10 @@
 import React from 'react';
-import Grid from '@mui/material/Grid';
 import styled from 'styled-components';
-import image from '../../../assets/whoWeAre.png';
+import Grid from '@mui/material/Grid';
+import image from '../../../assets/whatWeDo.png';
 import { SubpageText, SubpageTitle } from '../../../components';
 
-function WhoWeAre() {
+function WhyWeDoIt() {
   return (
     <Wrapper>
       <Grid
@@ -15,15 +15,9 @@ function WhoWeAre() {
         spacing={2}
       >
         <Grid item md={8} sm={12}>
-          <Subheader>Who we are...</Subheader>
+          <Subheader>Why we do it...</Subheader>
           <Subtext>
-            We are the official student society for the
-            {' '}
-            <Link href="/" target="_blank">School of Computer Science</Link>
-            {' '}
-            students at the
-            {' '}
-            <Link href="/" target="_blank">University of Guelph.</Link>
+            We do it because of reasons that will be listed out in this section once i get around to finishing it.
           </Subtext>
         </Grid>
         <GridImage item md={4} sm={12}>
@@ -47,11 +41,6 @@ const GridImage = styled(Grid)`
   text-align: center;
 `;
 
-const Link = styled.a`
-  color: black;
-  text-decoration: none;
-`;
-
 const Image = styled.img`
   max-width: 100%;
   min-width: 25vw;
@@ -68,4 +57,4 @@ const Subtext = styled(SubpageText)`
   text-align: left;
 `;
 
-export default WhoWeAre;
+export default WhyWeDoIt;

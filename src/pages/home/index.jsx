@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {
-  Header, WhoWeAre, WhatWeDo, HowToContact,
+  Header, WhoWeAre, WhatWeDo, HowToContact, WhyWeDoIt,
 } from './components';
 import { NavBar } from '../../components';
 
@@ -15,6 +15,7 @@ function HomePage() {
       <HomeSubheaders>
         <WhoWeAre />
         <WhatWeDo />
+        <WhyWeDoIt />
         <HowToContact />
       </HomeSubheaders>
     </HomeWrapper>
@@ -30,11 +31,7 @@ const Banner = styled.div`
 `;
 
 const HomeSubheaders = styled.div`
-  background-color: #F5F5F5;
-  padding-top: 10vh;
   padding-bottom: 10vh;
-  padding-left: 10vw;
-  padding-right: 10vw;
   font-size: 20px;
 `;
 
