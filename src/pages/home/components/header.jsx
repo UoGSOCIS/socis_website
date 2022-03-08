@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Grid from '@mui/material/Grid';
 import styled from 'styled-components';
 import HeaderMessage from './headerMessage';
 import SOCISLogo from '../../../assets/socisLogo';
@@ -21,14 +22,19 @@ function Header() {
 
   return (
     <Banner>
-      <BannerContainer>
-        <LogoContainer>
+      <BannerGrid
+        container
+        direction="row"
+        justify="center"
+        alignItems="center"
+      >
+        <LogoGrid item lg={4} md={12}>
           <SOCISLogo alt="SOCIS Logo" className="animate__animated animate__fadeIn" height={logoHeight} width={logoWidth} />
-        </LogoContainer>
-        <div>
+        </LogoGrid>
+        <MessageGrid item lg={8} md={12}>
           <HeaderMessage />
-        </div>
-      </BannerContainer>
+        </MessageGrid>
+      </BannerGrid>
       <ScrollIndicator />
     </Banner>
   );
@@ -40,17 +46,18 @@ const Banner = styled.div`
   padding: 0 2vw;
 `;
 
-const BannerContainer = styled.div`
-  height: 86%;
+const BannerGrid = styled(Grid)`
+  height: 85%;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 `;
 
-const LogoContainer = styled.div`
+const LogoGrid = styled(Grid)`
   text-align: center;
-  width: 56rem;
+  width: 100%;
+`;
+
+const MessageGrid = styled(Grid)`
+  width: 100%;
 `;
 
 export default Header;
