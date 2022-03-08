@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { LearnMoreBtn, SubpageText, SubpageTitle } from '../../../components';
+import { SubpageText, SubpageTitle } from '../../../components';
+import LearnMoreBtn from './learnMoreBtn';
 
 function HowToContact() {
   return (
@@ -14,7 +15,7 @@ function HowToContact() {
 
 const Wrapper = styled.div`
   text-align: center;
-  padding: 0 10vw;
+  padding: 10vh 10vw;
   margin-left: auto;
 `;
 
