@@ -5,7 +5,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import Container from '@mui/material/Container';
 import styled from 'styled-components';
-import { FontAwesomeLink } from '../../../components/icons';
+import { FaLinks } from '../../../components/icons';
 
 function SocialMedia() {
   return (
@@ -19,22 +19,22 @@ function SocialMedia() {
         spacing={2}
       >
         <IconGrid item xs={12} sm={6} md={4} lg={2}>
-          <FontAwesomeLink href="https://www.facebook.com/groups/UoGSOCIS" icon={faFacebook} />
+          <FaLinks href="https://www.facebook.com/groups/UoGSOCIS" icon={faFacebook} />
         </IconGrid>
         <IconGrid item xs={12} sm={6} md={4} lg={2}>
-          <FontAwesomeLink href="https://twitter.com/uogsocis" icon={faTwitter} />
+          <FaLinks href="https://twitter.com/uogsocis" icon={faTwitter} />
         </IconGrid>
         <IconGrid item xs={12} sm={6} md={4} lg={2}>
-          <FontAwesomeLink href="https://www.instagram.com/socis.uog" icon={faInstagram} />
+          <FaLinks href="https://www.instagram.com/socis.uog" icon={faInstagram} />
         </IconGrid>
         <IconGrid item xs={12} sm={6} md={4} lg={2}>
-          <FontAwesomeLink href="https://www.linkedin.com/company/uog-socis/" icon={faLinkedin} />
+          <FaLinks href="https://www.linkedin.com/company/uog-socis/" icon={faLinkedin} />
         </IconGrid>
         <IconGrid item xs={12} sm={6} md={4} lg={2}>
-          <FontAwesomeLink href="https://gryph.slack.com" icon={faSlack} />
+          <FaLinks href="https://gryph.slack.com" icon={faSlack} />
         </IconGrid>
         <IconGrid item xs={12} sm={6} md={4} lg={2}>
-          <FontAwesomeLink href="http://discord.gg/PZ45Jn9MN7" icon={faDiscord} />
+          <FaLinks href="http://discord.gg/PZ45Jn9MN7" icon={faDiscord} />
         </IconGrid>
       </Grid>
     </Container>

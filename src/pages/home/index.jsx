@@ -4,6 +4,7 @@ import {
   Header, WhoWeAre, WhatWeDo, HowToContact, WhyWeDoIt,
 } from './components';
 import { NavBar } from '../../components';
+import ScrollIndicator from './components/scrollIndicator';
 
 function HomePage() {
   return (
@@ -12,6 +13,7 @@ function HomePage() {
         <NavBar home />
         <Header />
       </Banner>
+      <ScrollIndicator />
       <HomeSubheaders>
         <WhoWeAre />
         <WhatWeDo />
