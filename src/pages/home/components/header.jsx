@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import Grid from '@mui/material/Grid';
 import styled from 'styled-components';
 import HeaderMessage from './headerMessage';
 import SOCISLogo from '../../../assets/socisLogo';
 import { useViewport } from '../../../components';
+import ScrollIndicator from './scrollIndicator';
 
 function Header() {
   const breakpoint = 680; // 679.467, default image width
@@ -21,19 +21,15 @@ function Header() {
 
   return (
     <Banner>
-      <BannerGrid
-        container
-        direction="row"
-        justify="center"
-        alignItems="center"
-      >
-        <LogoGrid item lg={4} md={12}>
+      <BannerContainer>
+        <LogoContainer>
           <SOCISLogo alt="SOCIS Logo" className="animate__animated animate__fadeIn" height={logoHeight} width={logoWidth} />
-        </LogoGrid>
-        <Grid item lg={8} md={12}>
+        </LogoContainer>
+        <div>
           <HeaderMessage />
-        </Grid>
-      </BannerGrid>
+        </div>
+      </BannerContainer>
+      <ScrollIndicator />
     </Banner>
   );
 }
@@ -41,16 +37,20 @@ function Header() {
 const Banner = styled.div`
   background-color: #660000;
   height: 100%;
-  padding-right: 2vw;
+  padding: 0 2vw;
 `;
 
-const BannerGrid = styled(Grid)`
-  height: 95%;
+const BannerContainer = styled.div`
+  height: 86%;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
-const LogoGrid = styled(Grid)`
+const LogoContainer = styled.div`
   text-align: center;
+  width: 56rem;
 `;
 
 export default Header;

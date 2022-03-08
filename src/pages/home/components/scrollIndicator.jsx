@@ -1,18 +1,34 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import DoubleDownIcon from '../../../components/icons/svgIcons';
 
 function ScrollIndicator() {
+  const [show, setShow] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    setInterval(() => setShow(true), 5000);
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => setScrolled(true), { passive: true });
+    return () => window.removeEventListener('scroll', () => setScrolled(false));
+  }, []);
+
   return (
     <ScrollIndicatorWrapper>
-      <ScrollLink href="#who-we-are">
-        <div>
-          <ScrollText>Scroll</ScrollText>
-        </div>
-        <div>
-          <DoubleDownIcon />
-        </div>
-      </ScrollLink>
+      {show
+        && !scrolled
+        && (
+          <ScrollLink href="#who-we-are">
+            <div>
+              <ScrollText>Scroll</ScrollText>
+            </div>
+            <div>
+              <DoubleDownIcon />
+            </div>
+          </ScrollLink>
+        )}
     </ScrollIndicatorWrapper>
   );
 }
@@ -20,7 +36,9 @@ function ScrollIndicator() {
 const ScrollIndicatorWrapper = styled.div`
   text-align: center;
   color: white;
-  padding-bottom: 2rem;
+  height: 5vh;
+  position: relative;
+  bottom: 0;
 `;
 
 const ScrollLink = styled.a`

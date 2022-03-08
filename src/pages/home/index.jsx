@@ -4,7 +4,6 @@ import {
   Header, WhoWeAre, WhatWeDo, HowToContact, WhyWeDoIt,
 } from './components';
 import { NavBar } from '../../components';
-import ScrollIndicator from './components/scrollIndicator';
 
 function HomePage() {
   return (
@@ -13,7 +12,6 @@ function HomePage() {
         <NavBar home />
         <Header />
       </Banner>
-      <ScrollIndicator />
       <HomeSubheaders>
         <WhoWeAre />
         <WhatWeDo />
@@ -30,6 +28,7 @@ const HomeWrapper = styled.div`
 
 const Banner = styled.div`
   height: 100vh;
+  background-color: #660000;
 `;
 
 const HomeSubheaders = styled.div`
