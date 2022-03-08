@@ -6,7 +6,7 @@ import { SubpageText, SubpageTitle } from '../../../components';
 
 function WhoWeAre() {
   return (
-    <Wrapper>
+    <Wrapper id="who-we-are">
       <Grid
         container
         direction="row"
