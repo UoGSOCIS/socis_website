@@ -9,20 +9,20 @@ function WhatWeDo() {
     <Wrapper>
       <Grid
         container
-        direction="row"
+        direction="row-reverse"
         justifyContent="center"
         alignItems="center"
         spacing={2}
       >
         <Grid item md={4} sm={12}>
-          <Image src={image} alt="introduction" />
-        </Grid>
-        <Grid item md={8} sm={12}>
           <Subheader>What we do...</Subheader>
           <Subtext>
             SOCIS focuses on community building, creating opportunities for students, and advocating for students interests.
             We also run events, organize hackathons, administer clubs, and represent School of Computer Science students.
           </Subtext>
+        </Grid>
+        <Grid item md={8} sm={12}>
+          <Image src={image} alt="introduction" />
         </Grid>
       </Grid>
     </Wrapper>
@@ -39,7 +39,7 @@ const Wrapper = styled.div`
 `;
 
 const Image = styled.img`
-  max-width: 100%;
+  width: 60rem;
   min-width: 25vw;
   min-height: 25vh;
 `;

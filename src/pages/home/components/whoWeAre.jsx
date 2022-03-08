@@ -14,7 +14,7 @@ function WhoWeAre() {
         alignItems="center"
         spacing={2}
       >
-        <Grid item md={8} sm={12}>
+        <Grid item md={4} sm={12}>
           <Subheader>Who we are...</Subheader>
           <Subtext>
             We are the official student society for the
@@ -26,7 +26,7 @@ function WhoWeAre() {
             <Link href="/" target="_blank">University of Guelph.</Link>
           </Subtext>
         </Grid>
-        <GridImage item md={4} sm={12}>
+        <GridImage item md={8} sm={12}>
           <Image src={image} alt="teamwork" />
         </GridImage>
       </Grid>
@@ -53,7 +53,7 @@ const Link = styled.a`
 `;
 
 const Image = styled.img`
-  max-width: 100%;
+  width: 60rem;
   min-width: 25vw;
   min-height: 25vh;
 `;
