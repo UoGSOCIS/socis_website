@@ -2,7 +2,6 @@ import React from 'react';
 import Grid from '@mui/material/Grid';
 import styled from 'styled-components';
 import image from '../../../assets/whatWeDo.png';
-import { SubpageText, SubpageTitle } from '../../../components';
 
 function WhatWeDo() {
   return (
@@ -15,7 +14,7 @@ function WhatWeDo() {
         spacing={2}
       >
         <Grid item md={4} sm={12}>
-          <Subheader>What we do...</Subheader>
+          <Subheader>What we do</Subheader>
           <Subtext>
             SOCIS focuses on community building, creating opportunities for students, and advocating for students interests.
             We also run events, organize hackathons, administer clubs, and represent School of Computer Science students.
@@ -39,19 +38,26 @@ const Wrapper = styled.div`
 `;
 
 const Image = styled.img`
-  width: 60rem;
+  width: 45rem;
   min-width: 25vw;
   min-height: 25vh;
 `;
 
-const Subheader = styled(SubpageTitle)`
-  font-size: 56px;
+const Subheader = styled.p`
   text-align: left;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.625;
+  margin-bottom: 0.5rem;
+  @media (max-width: 960px) {
+    text-align: center;
+  }
 `;
 
-const Subtext = styled(SubpageText)`
-  font-size: 24px;
+const Subtext = styled.p`
   text-align: left;
+  font-size: 24px;
+  line-height: 1.625;
 `;
 
 export default WhatWeDo;

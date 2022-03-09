@@ -2,7 +2,6 @@ import React from 'react';
 import Grid from '@mui/material/Grid';
 import styled from 'styled-components';
 import image from '../../../assets/whoWeAre.png';
-import { SubpageText, SubpageTitle } from '../../../components';
 
 function WhoWeAre() {
   return (
@@ -15,7 +14,7 @@ function WhoWeAre() {
         spacing={2}
       >
         <Grid item md={4} sm={12}>
-          <Subheader>Who we are...</Subheader>
+          <Subheader>Who we are</Subheader>
           <Subtext>
             We are the official student society for the
             {' '}
@@ -53,19 +52,26 @@ const Link = styled.a`
 `;
 
 const Image = styled.img`
-  width: 60rem;
+  width: 45rem;
   min-width: 25vw;
   min-height: 25vh;
 `;
 
-const Subheader = styled(SubpageTitle)`
-  font-size: 56px;
+const Subheader = styled.p`
   text-align: left;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.625;
+  margin-bottom: 0.5rem;
+  @media (max-width: 960px) {
+    text-align: center;
+  }
 `;
 
-const Subtext = styled(SubpageText)`
-  font-size: 24px;
+const Subtext = styled.p`
   text-align: left;
+  font-size: 24px;
+  line-height: 1.625;
 `;
 
 export default WhoWeAre;
