@@ -16,7 +16,8 @@ function WhyWeDoIt() {
         <Grid item md={4} sm={12}>
           <Subheader>Why we do it</Subheader>
           <Subtext>
-            We do it because of reasons that will be listed out in this section once i get around to finishing it.
+            SOCIS plays a role in uniting students and improving their university experience. We want to empower
+            students to innovate, network, and succeed because students are what make the University of Guelph great.
           </Subtext>
         </Grid>
         <GridImage item md={8} sm={12}>
