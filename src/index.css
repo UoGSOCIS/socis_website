@@ -16,10 +16,6 @@ code {
     monospace;
 }
 
-.animate__animated.animate__fadeIn {
-  --animate-duration: 3s;
-}
-
 @keyframes flickerAnimation {
   0%   { opacity:0; }
   50%  { opacity:1; }
