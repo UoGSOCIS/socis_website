@@ -14,14 +14,14 @@ function ScrollIndicator() {
     <ScrollIndicatorWrapper className="animate-flicker">
       {!scrolled
         && (
-          <ScrollLink href="#who-we-are">
-            <div>
-              <ScrollText>Scroll</ScrollText>
-            </div>
-            <div>
-              <DoubleDownIcon />
-            </div>
-          </ScrollLink>
+        <ScrollLink href="#who-we-are">
+          <div>
+            <ScrollText>Scroll</ScrollText>
+          </div>
+          <div>
+            <DoubleDownIcon />
+          </div>
+        </ScrollLink>
         )}
     </ScrollIndicatorWrapper>
   );

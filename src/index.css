@@ -21,29 +21,30 @@ code {
 }
 
 @keyframes flickerAnimation {
-  0%   { opacity:1; }
-  50%  { opacity:0; }
-  100% { opacity:1; }
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
 }
 @-o-keyframes flickerAnimation{
-  0%   { opacity:1; }
-  50%  { opacity:0; }
-  100% { opacity:1; }
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
 }
 @-moz-keyframes flickerAnimation{
-  0%   { opacity:1; }
-  50%  { opacity:0; }
-  100% { opacity:1; }
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
 }
 @-webkit-keyframes flickerAnimation{
-  0%   { opacity:1; }
-  50%  { opacity:0; }
-  100% { opacity:1; }
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
 }
 
 .animate-flicker {
-  -webkit-animation: flickerAnimation 5s infinite;
-  -moz-animation: flickerAnimation 5s infinite;
-  -o-animation: flickerAnimation 5s infinite;
-  animation: flickerAnimation 5s infinite;
+  -webkit-animation: flickerAnimation 10s;
+  -moz-animation: flickerAnimation 10s;
+  -o-animation: flickerAnimation 10s;
+  animation: flickerAnimation 10s;
+  opacity: 0;
 }
