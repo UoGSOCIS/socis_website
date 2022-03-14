@@ -3,12 +3,7 @@ import styled from 'styled-components';
 import DoubleDownIcon from '../../../components/icons/svgIcons';
 
 function ScrollIndicator() {
-  const [show, setShow] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    setInterval(() => setShow(true), 5000);
-  }, []);
 
   useEffect(() => {
     window.addEventListener('scroll', () => setScrolled(true), { passive: true });
@@ -16,9 +11,8 @@ function ScrollIndicator() {
   }, []);
 
   return (
-    <ScrollIndicatorWrapper>
-      {show
-        && !scrolled
+    <ScrollIndicatorWrapper className="animate-flicker">
+      {!scrolled
         && (
           <ScrollLink href="#who-we-are">
             <div>
