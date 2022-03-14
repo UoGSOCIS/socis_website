@@ -1,7 +1,7 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
 import styled from 'styled-components';
-import image from '../../../assets/whoWeAre.png';
+import image from '../assets/whoWeAre.png';
 
 function WhoWeAre() {
   return (
@@ -26,7 +26,7 @@ function WhoWeAre() {
           </Subtext>
         </Grid>
         <GridImage item md={8} sm={12}>
-          <Image src={image} alt="teamwork" />
+          <Image src={image} alt="students waving" />
         </GridImage>
       </Grid>
     </Wrapper>

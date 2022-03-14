@@ -29,7 +29,9 @@ const StyledButton = styled(Button)`
   align-items: center;
   justify-content: center;
   width: 200px;
-  padding-top: 10vh;
+  padding: 16px 32px;
+  border-radius: 28px;
+  line-height: 1.625;
 `;
 
 LearnMoreBtn.propTypes = {

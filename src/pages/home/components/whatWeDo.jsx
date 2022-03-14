@@ -1,7 +1,7 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
 import styled from 'styled-components';
-import image from '../../../assets/whatWeDo.png';
+import image from '../assets/whatWeDo.png';
 
 function WhatWeDo() {
   return (
@@ -16,12 +16,12 @@ function WhatWeDo() {
         <Grid item md={4} sm={12}>
           <Subheader>What we do</Subheader>
           <Subtext>
-            SOCIS focuses on community building, creating opportunities for students, and advocating for students interests.
+            We focus on community building, creating opportunities for students, and advocating for students interests.
             We also run events, organize hackathons, administer clubs, and represent School of Computer Science students.
           </Subtext>
         </Grid>
         <Grid item md={8} sm={12}>
-          <Image src={image} alt="introduction" />
+          <Image src={image} alt="students climbing up steps together" />
         </Grid>
       </Grid>
     </Wrapper>

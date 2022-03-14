@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Grid from '@mui/material/Grid';
-import image from '../../../assets/whatWeDo.png';
+import image from '../assets/whyWeDoIt.png';
 
 function WhyWeDoIt() {
   return (
@@ -16,12 +16,12 @@ function WhyWeDoIt() {
         <Grid item md={4} sm={12}>
           <Subheader>Why we do it</Subheader>
           <Subtext>
-            SOCIS plays a role in uniting students and improving their university experience. We want to empower
-            students to innovate, network, and succeed because students are what make the University of Guelph great.
+            We play a role in uniting students and improving their university experience. Through this role we want to
+            empower students to innovate, network, and succeed because students are what make the University of Guelph great.
           </Subtext>
         </Grid>
         <GridImage item md={8} sm={12}>
-          <Image src={image} alt="teamwork" />
+          <Image src={image} alt="students united and succeeding" />
         </GridImage>
       </Grid>
     </Wrapper>
