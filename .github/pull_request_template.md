@@ -22,3 +22,11 @@ Related: # <!-- number of issue/pull request, or link to external discussion -->
 - [ ] Update documentation / not applicable
 - [ ] Set yourself as the `Assignee`
 - [ ] Set `SoorajModi` or `MarshallAsch` as the reviewer
+
+---
+
+**View branches:**
+
+You can view this branch on staging at [dev2.socis.ca](https://dev2.socis.ca/).
+
+You can view the main branch deployed at [socis.ca](https://socis.ca/).
