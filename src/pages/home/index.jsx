@@ -27,7 +27,7 @@ const HomeWrapper = styled.div`
 `;
 
 const Banner = styled.div`
-  height: 100vh;
+  height: 70vh;
   background-color: #660000;
 `;
 

@@ -4,7 +4,7 @@ import { useViewport } from '../../../components';
 
 function HeaderMessage() {
   const { width } = useViewport();
-  const breakpoint = 676; // Mobile view breakpoint
+  const breakpoint = 1200; // Mobile view breakpoint
 
   return (
     <Message>

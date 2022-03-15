@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import HeaderMessage from './headerMessage';
 import SOCISLogo from '../../../assets/socisLogo';
 import { useViewport } from '../../../components';
-import ScrollIndicator from './scrollIndicator';
 
 function Header() {
   const breakpoint = 680; // 679.467, default image width
@@ -35,7 +34,7 @@ function Header() {
           <HeaderMessage />
         </MessageGrid>
       </BannerGrid>
-      <ScrollIndicator />
+      {/* <ScrollIndicator /> */}
     </Banner>
   );
 }

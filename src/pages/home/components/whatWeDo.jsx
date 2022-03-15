@@ -30,7 +30,7 @@ function WhatWeDo() {
 
 const Wrapper = styled.div`
   text-align: left;
-  padding: 15vh 10vw;
+  padding: 10vh 10vw;
   background-color: #F5F5F5;
   @media (max-width: 960px) {
     text-align: center;

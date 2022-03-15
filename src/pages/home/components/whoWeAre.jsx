@@ -35,7 +35,7 @@ function WhoWeAre() {
 
 const Wrapper = styled.div`
   text-align: left;
-  padding: 15vh 10vw;
+  padding: 10vh 10vw;
   background-color: white;
   @media (max-width: 960px) {
     text-align: center;

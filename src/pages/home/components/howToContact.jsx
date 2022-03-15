@@ -14,7 +14,7 @@ function HowToContact() {
 
 const Wrapper = styled.div`
   text-align: center;
-  padding: 15vh 15vw;
+  padding: 10vh 15vw;
   margin-left: auto;
 `;
 
