@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import HeaderMessage from './headerMessage';
 import SOCISLogo from '../../../assets/socisLogo';
 import { useViewport } from '../../../components';
+import ScrollIndicator from './scrollIndicator';
 
 function Header() {
   const breakpoint = 680; // 679.467, default image width
@@ -30,10 +31,11 @@ function Header() {
         <LogoGrid item lg={4} md={12}>
           <SOCISLogo alt="SOCIS Logo" className="animate__animated animate__fadeIn" height={logoHeight} width={logoWidth} />
         </LogoGrid>
-        <Grid item lg={8} md={12}>
+        <MessageGrid item lg={8} md={12}>
           <HeaderMessage />
-        </Grid>
+        </MessageGrid>
       </BannerGrid>
+      <ScrollIndicator />
     </Banner>
   );
 }
@@ -41,16 +43,21 @@ function Header() {
 const Banner = styled.div`
   background-color: #660000;
   height: 100%;
-  padding-right: 2vw;
+  padding: 0 2vw;
 `;
 
 const BannerGrid = styled(Grid)`
-  height: 95%;
+  height: 85%;
   width: 100%;
 `;
 
 const LogoGrid = styled(Grid)`
   text-align: center;
+  width: 100%;
+`;
+
+const MessageGrid = styled(Grid)`
+  width: 100%;
 `;
 
 export default Header;
