@@ -1,28 +1,28 @@
 import React from 'react';
-import Grid from '@mui/material/Grid';
 import styled from 'styled-components';
-import image from '../assets/whatWeDo.png';
+import Grid from '@mui/material/Grid';
+import image from '../assets/whyWeDoIt.png';
 
-function WhatWeDo() {
+function WhyWeDoIt() {
   return (
     <Wrapper>
       <Grid
         container
-        direction="row-reverse"
+        direction="row"
         justifyContent="center"
         alignItems="center"
         spacing={2}
       >
         <Grid item md={4} sm={12}>
-          <Subheader>What we do</Subheader>
+          <Subheader>Why we do it</Subheader>
           <Subtext>
-            We focus on community building, creating opportunities for students, and advocating for students interests.
-            We also run events, organize hackathons, administer clubs, and represent School of Computer Science students.
+            We play a role in uniting students and improving their university experience. Through this role we want to
+            empower students to innovate, network, and succeed because students are what make the University of Guelph great.
           </Subtext>
         </Grid>
-        <Grid item md={8} sm={12}>
-          <Image src={image} alt="students climbing up steps together" />
-        </Grid>
+        <GridImage item md={8} sm={12}>
+          <Image src={image} alt="students united and succeeding" />
+        </GridImage>
       </Grid>
     </Wrapper>
   );
@@ -31,10 +31,14 @@ function WhatWeDo() {
 const Wrapper = styled.div`
   text-align: left;
   padding: 15vh 10vw;
-  background-color: #F5F5F5;
+  background-color: white;
   @media (max-width: 960px) {
     text-align: center;
   }
+`;
+
+const GridImage = styled(Grid)`
+  text-align: center;
 `;
 
 const Image = styled.img`
@@ -60,4 +64,4 @@ const Subtext = styled.p`
   line-height: 1.625;
 `;
 
-export default WhatWeDo;
+export default WhyWeDoIt;
