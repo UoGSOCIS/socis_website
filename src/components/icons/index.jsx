@@ -1,6 +1,6 @@
-import FontAwesomeLink from './fontAwesomeLink';
+import FaLinks from './faLinks';
 
 export {
   // eslint-disable-next-line import/prefer-default-export
-  FontAwesomeLink,
+  FaLinks,
 };

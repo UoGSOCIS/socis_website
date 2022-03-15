@@ -1,4 +1,4 @@
-import LearnMoreBtn from './learnMoreBtn';
+import LearnMoreBtn from '../../pages/home/components/learnMoreBtn';
 import ReturnHomeBtn from './returnHomeBtn';
 
 export {
