@@ -18,11 +18,11 @@ function WhoWeAre() {
           <Subtext>
             We are the official student society for the
             {' '}
-            <Link href="/" target="_blank">School of Computer Science</Link>
+            <Link href="https://www.uoguelph.ca/computing/" target="_blank">School of Computer Science</Link>
             {' '}
             students at the
             {' '}
-            <Link href="/" target="_blank">University of Guelph.</Link>
+            <Link href="https://www.uoguelph.ca/" target="_blank">University of Guelph.</Link>
           </Subtext>
         </Grid>
         <GridImage item md={8} sm={12}>
@@ -53,8 +53,7 @@ const Link = styled.a`
 
 const Image = styled.img`
   width: 45rem;
-  min-width: 25vw;
-  min-height: 25vh;
+  max-width: 100%;
 `;
 
 const Subheader = styled.p`
