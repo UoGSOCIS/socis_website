@@ -1,10 +1,7 @@
 import React from 'react';
-import { FileViewer, Header } from './components';
+import { Header } from './components';
 import { ContentWrapper, NavBar } from '../../components';
-import constitution from './assets/Constitution.pdf';
-import clubSpacePolicy from './assets/ClubSpacePolicy.pdf';
-import committeeAndStaffPolicy from './assets/CommitteeAndStaffPolicy.pdf';
-import makersSpacePolicy from './assets/MakersSpacePolicy.pdf';
+import Accordian from './components/accordian';
 
 function PolicyPage() {
   return (
@@ -12,10 +9,7 @@ function PolicyPage() {
       <NavBar />
       <ContentWrapper>
         <Header />
-        <FileViewer heading="Constitution" file={constitution} />
-        <FileViewer heading="Club Space Policy" file={clubSpacePolicy} />
-        <FileViewer heading="Committee and Staff Policy" file={committeeAndStaffPolicy} />
-        <FileViewer heading="Makerspace Policy" file={makersSpacePolicy} />
+        <Accordian />
       </ContentWrapper>
     </>
   );
