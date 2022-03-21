@@ -22,7 +22,6 @@ const FooterWrapper = styled.div`
   bottom: 0;
   width: 100%;
   display: block;
-  height: 2.5rem;
   text-align: center;
   color: white;
 `;
@@ -30,6 +29,9 @@ const FooterWrapper = styled.div`
 const Link = styled.a`
   color: white;
   text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 export default Footer;

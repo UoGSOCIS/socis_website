@@ -20,9 +20,9 @@ function WhatWeDo() {
             We also run events, organize hackathons, administer clubs, and represent School of Computer Science students.
           </Subtext>
         </Grid>
-        <Grid item md={8} sm={12}>
+        <GridImage item md={8} sm={12}>
           <Image src={image} alt="students climbing up steps together" />
-        </Grid>
+        </GridImage>
       </Grid>
     </Wrapper>
   );
@@ -37,10 +37,14 @@ const Wrapper = styled.div`
   }
 `;
 
+const GridImage = styled(Grid)`
+  text-align: center;
+  overflow: hidden;
+`;
+
 const Image = styled.img`
   width: 45rem;
-  min-width: 25vw;
-  min-height: 25vh;
+  max-width: 100%;
 `;
 
 const Subheader = styled.p`
