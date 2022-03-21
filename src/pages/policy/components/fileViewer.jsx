@@ -22,8 +22,7 @@ function FileViewer({ heading, file }) {
 }
 
 const StyledContainer = styled.div`
- height: 90vh;
- padding-bottom: 10vh;
+ height: 85vh;
 `;
 
 export default FileViewer;
