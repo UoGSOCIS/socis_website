@@ -25,7 +25,6 @@ function Header() {
 
 const Subtext = styled(SubpageText)`
   text-align: left;
-  marginTop: 0;
 `;
 
 export default Header;
