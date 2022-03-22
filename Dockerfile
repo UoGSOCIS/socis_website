@@ -1,4 +1,4 @@
-FROM node:14 as BUILD
+FROM node:17 as BUILD
 
 WORKDIR /usr/src/app
 COPY package.json  yarn.lock .
@@ -8,7 +8,7 @@ RUN yarn install
 COPY . .
 RUN yarn build
 
-FROM node:14
+FROM node:17
 
 LABEL org.opencontainers.version="v1.0.0"
 
