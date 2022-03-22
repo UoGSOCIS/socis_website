@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 function GCC() {
   return (
-    <>
+    <div style={{ paddingBottom: '1rem' }}>
       <Name>Guelph Coding Community (GCC)</Name>
       <Bio>
         The Guelph Coding Community (GCC) is a School of Computer Science Student Organization (SOCSSO) focused on
@@ -18,7 +18,7 @@ function GCC() {
       <div style={{ textAlign: 'center' }}>
         <Link href="https://www.instagram.com/gcc_uog" target="_blank" rel="noreferrer">Instagram</Link>
       </div>
-    </>
+    </div>
   );
 }
 
@@ -26,11 +26,12 @@ const Name = styled.p`
     font-size: 28px;
     text-align: center;
     margin-top: 10px;
+    font-weight: 500;
 `;
 
 const Bio = styled.p`
-    font-size: 18px;
-    line-height: 1.4;
+    font-size: 20px;
+    line-height: 1.625;
 `;
 
 const Link = styled.a`
