@@ -1,13 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import ExecMissingImage from '../assets/ExecImageMissing.jpg';
 
 function Team({
   url, position, name, content,
 }) {
   return (
     <TeamCard>
-      <TeamImage src={url} alt="Team member image" />
+      <TeamImage src={url || ExecMissingImage} alt="Team member image" />
       <TeamCardContentWrapper>
         <TeamCardName>{name}</TeamCardName>
         <TeamCardPosition>{position}</TeamCardPosition>
@@ -29,6 +30,7 @@ const TeamCard = styled.div`
 
 const TeamImage = styled.img`
   border: 0;
+  border-color: white;
   width: 100%;
   vertical-align: middle;
   display: inline-block;
