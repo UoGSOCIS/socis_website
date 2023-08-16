@@ -3,6 +3,7 @@ export default {
     {
       position: 'President',
       name: 'Jesse Varkul',
+      image: 'https://raw.githubusercontent.com/UoGSOCIS/assets/main/exec/2023-2024/jesse-varkul.jpg',
     },
     {
       position: 'Vice President Internal',
@@ -26,7 +27,7 @@ export default {
     {
       position: 'Vice President Communication',
       name: 'Daniel Dombrovsky',
-      // image: 'https://raw.githubusercontent.com/UoGSOCIS/assets/main/exec/2022-2023/rafael.jpg',
+      image: 'https://raw.githubusercontent.com/UoGSOCIS/assets/main/exec/2023-2024/daniel-dombrovsky.jpg',
     },
     {
       position: 'System Administrator',
