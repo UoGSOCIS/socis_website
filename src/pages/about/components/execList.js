@@ -22,7 +22,7 @@ export default {
     {
       position: 'Vice President Finance',
       name: 'Adam Cote',
-      image: 'https://raw.githubusercontent.com/UoGSOCIS/assets/main/exec/2023-2024/adam-cote.jpg',
+      image: 'https://raw.githubusercontent.com/UoGSOCIS/assets/main/exec/2023-2024/adam-cote.JPG',
     },
     {
       position: 'Vice President Communication',
